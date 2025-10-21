@@ -1,0 +1,54 @@
+[0.017s] Invoking command in '/home/user/create_ws/build/create_description': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create_robot/create_description -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create_description
+[0.147s] -- The C compiler identification is GNU 11.4.0
+[0.250s] -- The CXX compiler identification is GNU 11.4.0
+[0.260s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.349s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.349s] -- Detecting C compile features
+[0.350s] -- Detecting C compile features - done
+[0.353s] -- Detecting CXX compiler ABI info
+[0.443s] -- Detecting CXX compiler ABI info - done
+[0.451s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.452s] -- Detecting CXX compile features
+[0.452s] -- Detecting CXX compile features - done
+[0.460s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.611s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.828s] -- Configuring done
+[0.830s] -- Generating done
+[0.837s] -- Build files have been written to: /home/user/create_ws/build/create_description
+[0.848s] Invoked command in '/home/user/create_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create_robot/create_description -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create_description
+[0.848s] Invoking command in '/home/user/create_ws/build/create_description': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_description -- -j8 -l8
+[0.912s] Invoked command in '/home/user/create_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_description -- -j8 -l8
+[0.929s] Invoking command in '/home/user/create_ws/build/create_description': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_description
+[0.938s] -- Install configuration: ""
+[0.939s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/launch
+[0.939s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/launch/create_1.launch
+[0.939s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/launch/roomba_400.launch
+[0.940s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/launch/create_2.launch
+[0.940s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/meshes
+[0.940s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/meshes/create_2.dae
+[0.942s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/meshes/create_1.dae
+[0.945s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/meshes/create_1.tga
+[0.946s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf
+[0.946s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_base_gazebo.urdf.xacro
+[0.947s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_base.urdf.xacro
+[0.947s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_2_gazebo.urdf.xacro
+[0.947s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_1.urdf.xacro
+[0.948s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_1_gazebo.urdf.xacro
+[0.948s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/urdf/create_2.urdf.xacro
+[0.949s] -- Installing: /home/user/create_ws/install/create_description/share/ament_index/resource_index/package_run_dependencies/create_description
+[0.950s] -- Installing: /home/user/create_ws/install/create_description/share/ament_index/resource_index/parent_prefix_path/create_description
+[0.950s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/environment/ament_prefix_path.sh
+[0.951s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/environment/ament_prefix_path.dsv
+[0.951s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/environment/path.sh
+[0.951s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/environment/path.dsv
+[0.951s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/local_setup.bash
+[0.952s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/local_setup.sh
+[0.952s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/local_setup.zsh
+[0.952s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/local_setup.dsv
+[0.952s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/package.dsv
+[0.953s] -- Installing: /home/user/create_ws/install/create_description/share/ament_index/resource_index/packages/create_description
+[0.953s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/cmake/create_descriptionConfig.cmake
+[0.953s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/cmake/create_descriptionConfig-version.cmake
+[0.953s] -- Installing: /home/user/create_ws/install/create_description/share/create_description/package.xml
+[0.956s] Invoked command in '/home/user/create_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_description

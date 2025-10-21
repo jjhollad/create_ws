@@ -1,0 +1,35 @@
+[0.480s] Invoking command in '/home/user/create_ws/build/create3_republisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_republisher
+[0.546s] -- The C compiler identification is GNU 11.4.0
+[0.611s] -- The CXX compiler identification is GNU 11.4.0
+[0.618s] -- Detecting C compiler ABI info
+[0.693s] -- Detecting C compiler ABI info - done
+[0.702s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.702s] -- Detecting C compile features
+[0.702s] -- Detecting C compile features - done
+[0.705s] -- Detecting CXX compiler ABI info
+[0.799s] -- Detecting CXX compiler ABI info - done
+[0.819s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.819s] -- Detecting CXX compile features
+[0.820s] -- Detecting CXX compile features - done
+[0.826s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.027s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.178s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[1.179s]   By not providing "Findirobot_create_msgs.cmake" in CMAKE_MODULE_PATH this
+[1.179s]   project has asked CMake to find a package configuration file provided by
+[1.179s]   "irobot_create_msgs", but CMake did not find one.
+[1.179s] 
+[1.179s]   Could not find a package configuration file provided by
+[1.179s]   "irobot_create_msgs" with any of the following names:
+[1.179s] 
+[1.179s]     irobot_create_msgsConfig.cmake
+[1.180s]     irobot_create_msgs-config.cmake
+[1.180s] 
+[1.180s]   Add the installation prefix of "irobot_create_msgs" to CMAKE_PREFIX_PATH or
+[1.180s]   set "irobot_create_msgs_DIR" to a directory containing one of the above
+[1.180s]   files.  If "irobot_create_msgs" provides a separate development package or
+[1.180s]   SDK, be sure it has been installed.
+[1.180s] 
+[1.180s] [0m
+[1.180s] -- Configuring incomplete, errors occurred!
+[1.181s] See also "/home/user/create_ws/build/create3_republisher/CMakeFiles/CMakeOutput.log".
+[1.185s] Invoked command in '/home/user/create_ws/build/create3_republisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_republisher

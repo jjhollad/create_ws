@@ -1,0 +1,577 @@
+[0.108s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73b112d0d720>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73b112d0d1b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73b112d0d1b0>>, mixin_verb=('build',))
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.282s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/user/create_ws'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.282s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'ros'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['cmake', 'python']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'cmake'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'python'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extensions ['python_setup_py']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples) by extension 'python_setup_py'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_coverage) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_coverage' with type 'ros.ament_cmake' and name 'create3_coverage'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_msgs) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_examples_msgs' with type 'ros.ament_cmake' and name 'create3_examples_msgs'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_examples_py) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_examples_py' with type 'ros.ament_python' and name 'create3_examples_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_lidar_slam) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_lidar_slam' with type 'ros.ament_cmake' and name 'create3_lidar_slam'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_republisher) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_republisher' with type 'ros.ament_cmake' and name 'create3_republisher'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/create3_examples/create3_teleop) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create3_examples/create3_teleop' with type 'ros.ament_python' and name 'create3_teleop'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_bringup) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create_robot/create_bringup' with type 'ros.ament_cmake' and name 'create_bringup'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_description) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create_robot/create_description' with type 'ros.ament_cmake' and name 'create_description'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_driver) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create_robot/create_driver' with type 'ros.ament_cmake' and name 'create_driver'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_msgs) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create_robot/create_msgs' with type 'ros.ament_cmake' and name 'create_msgs'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_robot/create_robot) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'src/create_robot/create_robot' with type 'ros.ament_cmake' and name 'create_robot'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/libcreate) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libcreate' with type 'ros.cmake' and name 'libcreate'
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.344s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/user/create_ws/install
+[0.344s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/user/sweepbot_ws/install
+[0.345s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/user/launch_ws/install
+[0.346s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 338 installed packages in /opt/ros/humble
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'create3_examples_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_examples_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_examples_msgs', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_examples_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_examples_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'create3_examples_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_examples_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_examples_py', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_examples_py', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_lidar_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'create3_lidar_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_lidar_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_lidar_slam', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_lidar_slam', 'symlink_install': False, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'create3_republisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'create3_republisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_republisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_republisher', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_republisher', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create3_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'create3_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_teleop', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'create_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'create_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create_description', 'merge_install': False, 'path': '/home/user/create_ws/src/create_robot/create_description', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'create_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'create_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create_msgs', 'merge_install': False, 'path': '/home/user/create_ws/src/create_robot/create_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'libcreate' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'libcreate' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/libcreate', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/libcreate', 'merge_install': False, 'path': '/home/user/create_ws/src/libcreate', 'symlink_install': False, 'test_result_base': None}
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_target' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_clean_first' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'cmake_force_configure' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'ament_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create3_coverage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.392s] DEBUG:colcon.colcon_core.verb:Building package 'create3_coverage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create3_coverage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create3_coverage', 'merge_install': False, 'path': '/home/user/create_ws/src/create3_examples/create3_coverage', 'symlink_install': False, 'test_result_base': None}
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_target' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'create_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'create_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create_driver', 'merge_install': False, 'path': '/home/user/create_ws/src/create_robot/create_driver', 'symlink_install': False, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'create_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create_bringup', 'merge_install': False, 'path': '/home/user/create_ws/src/create_robot/create_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'create_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'create_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/user/create_ws/build/create_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/user/create_ws/install/create_robot', 'merge_install': False, 'path': '/home/user/create_ws/src/create_robot/create_robot', 'symlink_install': False, 'test_result_base': None}
+[0.394s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.395s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.395s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create_robot/create_msgs' with build type 'ament_cmake'
+[0.395s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create_robot/create_msgs'
+[0.398s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.402s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/user/create_ws/src/libcreate' with build type 'cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/libcreate'
+[0.402s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.402s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.407s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create_robot/create_description' with build type 'ament_cmake'
+[0.407s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create_robot/create_description'
+[0.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.412s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create3_examples/create3_examples_msgs' with build type 'ament_cmake'
+[0.412s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create3_examples/create3_examples_msgs'
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.417s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/user/create_ws/src/create3_examples/create3_examples_py' with build type 'ament_python'
+[0.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('create3_examples_py', 'ament_prefix_path')
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create3_examples_py/share/create3_examples_py/hook/ament_prefix_path.ps1'
+[0.418s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create3_examples_py/share/create3_examples_py/hook/ament_prefix_path.dsv'
+[0.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create3_examples_py/share/create3_examples_py/hook/ament_prefix_path.sh'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create3_examples/create3_lidar_slam' with build type 'ament_cmake'
+[0.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create3_examples/create3_lidar_slam'
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create3_examples/create3_republisher' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create3_examples/create3_republisher'
+[0.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.434s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/user/create_ws/src/create3_examples/create3_teleop' with build type 'ament_python'
+[0.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('create3_teleop', 'ament_prefix_path')
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create3_teleop/share/create3_teleop/hook/ament_prefix_path.ps1'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create3_teleop/share/create3_teleop/hook/ament_prefix_path.dsv'
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create3_teleop/share/create3_teleop/hook/ament_prefix_path.sh'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_msgs -- -j8 -l8
+[0.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/libcreate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/libcreate -- -j8 -l8
+[0.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_description -- -j8 -l8
+[0.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create3_examples_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_examples_msgs -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_examples_msgs
+[0.898s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/user/create_ws/src/create3_examples/create3_examples_py'
+[0.898s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.899s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create3_lidar_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_lidar_slam -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_lidar_slam
+[0.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create3_republisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_republisher
+[1.248s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/user/create_ws/src/create3_examples/create3_teleop'
+[1.248s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.248s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/libcreate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/libcreate -- -j8 -l8
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/libcreate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/libcreate
+[1.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_description -- -j8 -l8
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_description
+[1.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/create_msgs -- -j8 -l8
+[1.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_msgs
+[1.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcreate', 'pkg_config_path')
+[1.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path.ps1'
+[1.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/libcreate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/libcreate
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path.dsv'
+[1.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path.sh'
+[1.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcreate', 'pkg_config_path_multiarch')
+[1.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path_multiarch.ps1'
+[1.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path_multiarch.dsv'
+[1.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/pkg_config_path_multiarch.sh'
+[1.303s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(libcreate)
+[1.308s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate' for CMake module files
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate' for CMake config files
+[1.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcreate', 'cmake_prefix_path')
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/cmake_prefix_path.ps1'
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/libcreate/share/libcreate/hook/cmake_prefix_path.dsv'
+[1.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/cmake_prefix_path.sh'
+[1.331s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate/lib'
+[1.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcreate', 'ld_library_path_lib')
+[1.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/ld_library_path_lib.ps1'
+[1.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/libcreate/share/libcreate/hook/ld_library_path_lib.dsv'
+[1.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/libcreate/share/libcreate/hook/ld_library_path_lib.sh'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate/bin'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate/lib/pkgconfig/libcreate.pc'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate/lib/python3.10/site-packages'
+[1.337s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/libcreate/bin'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/libcreate/share/libcreate/package.ps1'
+[1.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/libcreate/share/libcreate/package.dsv'
+[1.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/libcreate/share/libcreate/package.sh'
+[1.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/libcreate/share/libcreate/package.bash'
+[1.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/libcreate/share/libcreate/package.zsh'
+[1.345s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/libcreate/share/colcon-core/packages/libcreate)
+[1.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_description)
+[1.348s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description' for CMake module files
+[1.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_description
+[1.349s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description' for CMake config files
+[1.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_description', 'cmake_prefix_path')
+[1.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.ps1'
+[1.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.dsv'
+[1.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.sh'
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/bin'
+[1.352s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/lib/pkgconfig/create_description.pc'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/lib/python3.10/site-packages'
+[1.353s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/bin'
+[1.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.ps1'
+[1.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_description/share/create_description/package.dsv'
+[1.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.sh'
+[1.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.bash'
+[1.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.zsh'
+[1.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_description/share/colcon-core/packages/create_description)
+[1.361s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_description)
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description' for CMake module files
+[1.362s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description' for CMake config files
+[1.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_description', 'cmake_prefix_path')
+[1.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.ps1'
+[1.364s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.dsv'
+[1.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_description/share/create_description/hook/cmake_prefix_path.sh'
+[1.366s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/bin'
+[1.366s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/lib/pkgconfig/create_description.pc'
+[1.367s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/lib/python3.10/site-packages'
+[1.367s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_description/bin'
+[1.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.ps1'
+[1.369s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_description/share/create_description/package.dsv'
+[1.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.sh'
+[1.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.bash'
+[1.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_description/share/create_description/package.zsh'
+[1.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_description/share/colcon-core/packages/create_description)
+[1.381s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_msgs)
+[1.382s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs' for CMake module files
+[1.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/create_msgs
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs' for CMake config files
+[1.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_msgs', 'cmake_prefix_path')
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.ps1'
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.dsv'
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.sh'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib'
+[1.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_msgs', 'ld_library_path_lib')
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.dsv'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.sh'
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/bin'
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib/pkgconfig/create_msgs.pc'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib/python3.10/site-packages'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/bin'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.ps1'
+[1.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/package.dsv'
+[1.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.sh'
+[1.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.bash'
+[1.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.zsh'
+[1.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_msgs/share/colcon-core/packages/create_msgs)
+[1.399s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_msgs)
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs' for CMake module files
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs' for CMake config files
+[1.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_msgs', 'cmake_prefix_path')
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.dsv'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/cmake_prefix_path.sh'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib'
+[1.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_msgs', 'ld_library_path_lib')
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_msgs/share/create_msgs/hook/ld_library_path_lib.sh'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/bin'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib/pkgconfig/create_msgs.pc'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/lib/python3.10/site-packages'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_msgs/bin'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.ps1'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_msgs/share/create_msgs/package.dsv'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.sh'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.bash'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_msgs/share/create_msgs/package.zsh'
+[1.412s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_msgs/share/colcon-core/packages/create_msgs)
+[1.412s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create_robot/create_driver' with build type 'ament_cmake'
+[1.413s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create_robot/create_driver'
+[1.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_driver': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/create_ws/build/create_driver -- -j8 -l8
+[1.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_driver' returned '0': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/create_ws/build/create_driver -- -j8 -l8
+[1.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_driver': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/create_ws/build/create_driver
+[1.545s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_driver)
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver' for CMake module files
+[1.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create_driver' returned '0': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/create_ws/build/create_driver
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver' for CMake config files
+[1.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_driver', 'cmake_prefix_path')
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.ps1'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.dsv'
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.sh'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/bin'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib/pkgconfig/create_driver.pc'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib/python3.10/site-packages'
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/bin'
+[1.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.ps1'
+[1.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_driver/share/create_driver/package.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.sh'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.bash'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.zsh'
+[1.555s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_driver/share/colcon-core/packages/create_driver)
+[1.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create_driver)
+[1.556s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver' for CMake module files
+[1.557s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver' for CMake config files
+[1.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('create_driver', 'cmake_prefix_path')
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.dsv'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/user/create_ws/install/create_driver/share/create_driver/hook/cmake_prefix_path.sh'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/bin'
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib/pkgconfig/create_driver.pc'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/lib/python3.10/site-packages'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create_driver/bin'
+[1.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.ps1'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create_driver/share/create_driver/package.dsv'
+[1.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.sh'
+[1.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.bash'
+[1.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create_driver/share/create_driver/package.zsh'
+[1.565s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create_driver/share/colcon-core/packages/create_driver)
+[1.566s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/user/create_ws/src/create_robot/create_bringup' with build type 'ament_cmake'
+[1.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/user/create_ws/src/create_robot/create_bringup'
+[1.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/user/create_ws/build/create_bringup': CMAKE_PREFIX_PATH=/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/create_ws/build/create_bringup -- -j8 -l8
+[1.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/user/create_ws/build/create3_republisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/sweepbot_ws/install/sweepbot:/home/user/launch_ws/install/py_launch_example:/opt/ros/humble /usr/bin/cmake /home/user/create_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/create_ws/install/create3_republisher
+[1.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(create3_republisher)
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher' for CMake module files
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher' for CMake config files
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher/bin'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher/lib/pkgconfig/create3_republisher.pc'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher/lib/python3.10/site-packages'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/user/create_ws/install/create3_republisher/bin'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create3_republisher/share/create3_republisher/package.ps1'
+[1.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/user/create_ws/install/create3_republisher/share/create3_republisher/package.dsv'
+[1.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create3_republisher/share/create3_republisher/package.sh'
+[1.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create3_republisher/share/create3_republisher/package.bash'
+[1.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/user/create_ws/install/create3_republisher/share/create3_republisher/package.zsh'
+[1.640s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/user/create_ws/install/create3_republisher/share/colcon-core/packages/create3_republisher)
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.472s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.479s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.479s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.490s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/create_ws/install/local_setup.ps1'
+[2.491s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/create_ws/install/_local_setup_util_ps1.py'
+[2.492s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/create_ws/install/setup.ps1'
+[2.494s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/create_ws/install/local_setup.sh'
+[2.495s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/user/create_ws/install/_local_setup_util_sh.py'
+[2.495s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/create_ws/install/setup.sh'
+[2.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/create_ws/install/local_setup.bash'
+[2.497s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/create_ws/install/setup.bash'
+[2.499s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/user/create_ws/install/local_setup.zsh'
+[2.499s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/user/create_ws/install/setup.zsh'

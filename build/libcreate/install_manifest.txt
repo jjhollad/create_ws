@@ -1,0 +1,14 @@
+/home/user/create_ws/install/libcreate/lib/libcreate.so
+/home/user/create_ws/install/libcreate/include/create/serial.h
+/home/user/create_ws/install/libcreate/include/create/serial_query.h
+/home/user/create_ws/install/libcreate/include/create/util.h
+/home/user/create_ws/install/libcreate/include/create/packet.h
+/home/user/create_ws/install/libcreate/include/create/data.h
+/home/user/create_ws/install/libcreate/include/create/types.h
+/home/user/create_ws/install/libcreate/include/create/serial_stream.h
+/home/user/create_ws/install/libcreate/include/create/create.h
+/home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+/home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+/home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+/home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+/home/user/create_ws/install/libcreate/share/libcreate/package.xml

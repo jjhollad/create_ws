@@ -1,0 +1,1013 @@
+[0.000000] (-) TimerEvent: {}
+[0.000219] (create_description) JobQueued: {'identifier': 'create_description', 'dependencies': OrderedDict()}
+[0.000282] (create_msgs) JobQueued: {'identifier': 'create_msgs', 'dependencies': OrderedDict()}
+[0.000302] (libcreate) JobQueued: {'identifier': 'libcreate', 'dependencies': OrderedDict()}
+[0.000332] (create_driver) JobQueued: {'identifier': 'create_driver', 'dependencies': OrderedDict([('create_msgs', '/home/user/create_ws/install/create_msgs'), ('libcreate', '/home/user/create_ws/install/libcreate')])}
+[0.000352] (create_bringup) JobQueued: {'identifier': 'create_bringup', 'dependencies': OrderedDict([('create_description', '/home/user/create_ws/install/create_description'), ('create_msgs', '/home/user/create_ws/install/create_msgs'), ('libcreate', '/home/user/create_ws/install/libcreate'), ('create_driver', '/home/user/create_ws/install/create_driver')])}
+[0.000373] (create_robot) JobQueued: {'identifier': 'create_robot', 'dependencies': OrderedDict([('create_description', '/home/user/create_ws/install/create_description'), ('create_msgs', '/home/user/create_ws/install/create_msgs'), ('libcreate', '/home/user/create_ws/install/libcreate'), ('create_driver', '/home/user/create_ws/install/create_driver'), ('create_bringup', '/home/user/create_ws/install/create_bringup')])}
+[0.000395] (create_msgs) JobStarted: {'identifier': 'create_msgs'}
+[0.008379] (libcreate) JobStarted: {'identifier': 'libcreate'}
+[0.015483] (create_description) JobStarted: {'identifier': 'create_description'}
+[0.022775] (create_msgs) JobProgress: {'identifier': 'create_msgs', 'progress': 'cmake'}
+[0.023845] (create_msgs) JobProgress: {'identifier': 'create_msgs', 'progress': 'build'}
+[0.024542] (create_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/create_msgs', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/create_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[0.027791] (libcreate) JobProgress: {'identifier': 'libcreate', 'progress': 'cmake'}
+[0.029184] (libcreate) JobProgress: {'identifier': 'libcreate', 'progress': 'build'}
+[0.030217] (libcreate) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/libcreate', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/libcreate', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/libcreate'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[0.033195] (create_description) JobProgress: {'identifier': 'create_description', 'progress': 'cmake'}
+[0.034175] (create_description) JobProgress: {'identifier': 'create_description', 'progress': 'build'}
+[0.034576] (create_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/create_description', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/create_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[0.098227] (create_description) CommandEnded: {'returncode': 0}
+[0.099169] (-) TimerEvent: {}
+[0.099732] (create_description) JobProgress: {'identifier': 'create_description', 'progress': 'install'}
+[0.113078] (create_msgs) StdoutLine: {'line': b'[  1%] Built target create_msgs__cpp\n'}
+[0.114139] (create_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/create_description'], 'cwd': '/home/user/create_ws/build/create_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[0.125712] (create_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.126145] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/launch\n'}
+[0.126825] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/launch/create_1.launch\n'}
+[0.127109] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/launch/roomba_400.launch\n'}
+[0.127276] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/launch/create_2.launch\n'}
+[0.127412] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/meshes\n'}
+[0.127592] (create_msgs) StdoutLine: {'line': b'[ 12%] Built target create_msgs__rosidl_generator_c\n'}
+[0.128131] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/meshes/create_2.dae\n'}
+[0.128339] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/meshes/create_1.dae\n'}
+[0.128516] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/meshes/create_1.tga\n'}
+[0.128648] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf\n'}
+[0.128930] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_base_gazebo.urdf.xacro\n'}
+[0.129079] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_base.urdf.xacro\n'}
+[0.129211] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_2_gazebo.urdf.xacro\n'}
+[0.129328] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_1.urdf.xacro\n'}
+[0.129437] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_1_gazebo.urdf.xacro\n'}
+[0.129563] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/urdf/create_2.urdf.xacro\n'}
+[0.129663] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/ament_index/resource_index/package_run_dependencies/create_description\n'}
+[0.130208] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/ament_index/resource_index/parent_prefix_path/create_description\n'}
+[0.130361] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/environment/ament_prefix_path.sh\n'}
+[0.130464] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/environment/ament_prefix_path.dsv\n'}
+[0.130566] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/environment/path.sh\n'}
+[0.130696] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/environment/path.dsv\n'}
+[0.130811] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/local_setup.bash\n'}
+[0.130927] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/local_setup.sh\n'}
+[0.131063] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/local_setup.zsh\n'}
+[0.131203] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/local_setup.dsv\n'}
+[0.131341] (create_description) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_description/share/create_description/package.dsv\n'}
+[0.132105] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/ament_index/resource_index/packages/create_description\n'}
+[0.132333] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/cmake/create_descriptionConfig.cmake\n'}
+[0.132478] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/cmake/create_descriptionConfig-version.cmake\n'}
+[0.132854] (create_description) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_description/share/create_description/package.xml\n'}
+[0.133888] (create_description) CommandEnded: {'returncode': 0}
+[0.136720] (create_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_create_msgs\n'}
+[0.160143] (create_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/charging_state__type_support.cpp.o\x1b[0m\n'}
+[0.160373] (create_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/bumper__type_support.cpp.o\x1b[0m\n'}
+[0.160526] (create_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/bumper__type_support.cpp.o\x1b[0m\n'}
+[0.166455] (create_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o\x1b[0m\n'}
+[0.169740] (create_description) JobEnded: {'identifier': 'create_description', 'rc': 0}
+[0.174226] (create_msgs) StdoutLine: {'line': b'[ 29%] Built target create_msgs__rosidl_typesupport_c\n'}
+[0.175399] (create_msgs) StdoutLine: {'line': b'[ 40%] Built target create_msgs__rosidl_typesupport_introspection_c\n'}
+[0.176753] (create_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/bumper__type_support_c.cpp.o\x1b[0m\n'}
+[0.187103] (create_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/charging_state__type_support_c.cpp.o\x1b[0m\n'}
+[0.187347] (create_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/define_song__type_support_c.cpp.o\x1b[0m\n'}
+[0.201061] (-) TimerEvent: {}
+[0.210771] (libcreate) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/create.cpp.o\x1b[0m\n'}
+[0.216171] (libcreate) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/serial.cpp.o\x1b[0m\n'}
+[0.221398] (libcreate) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/serial_stream.cpp.o\x1b[0m\n'}
+[0.234706] (libcreate) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/serial_query.cpp.o\x1b[0m\n'}
+[0.236217] (libcreate) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/data.cpp.o\x1b[0m\n'}
+[0.249204] (libcreate) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/packet.cpp.o\x1b[0m\n'}
+[0.269085] (libcreate) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/create.dir/src/types.cpp.o\x1b[0m\n'}
+[0.301160] (-) TimerEvent: {}
+[0.401507] (-) TimerEvent: {}
+[0.501838] (-) TimerEvent: {}
+[0.602973] (-) TimerEvent: {}
+[0.703305] (-) TimerEvent: {}
+[0.756685] (create_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.756953] (create_msgs) StdoutLine: {'line': b'writing create_msgs.egg-info/PKG-INFO\n'}
+[0.757171] (create_msgs) StdoutLine: {'line': b'writing dependency_links to create_msgs.egg-info/dependency_links.txt\n'}
+[0.757409] (create_msgs) StdoutLine: {'line': b'writing top-level names to create_msgs.egg-info/top_level.txt\n'}
+[0.761950] (create_msgs) StdoutLine: {'line': b"reading manifest file 'create_msgs.egg-info/SOURCES.txt'\n"}
+[0.770053] (create_msgs) StdoutLine: {'line': b"writing manifest file 'create_msgs.egg-info/SOURCES.txt'\n"}
+[0.805985] (-) TimerEvent: {}
+[0.846838] (create_msgs) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_build_create_msgs_egg\n'}
+[0.875906] (create_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/mode__type_support_c.cpp.o\x1b[0m\n'}
+[0.906084] (-) TimerEvent: {}
+[1.006418] (-) TimerEvent: {}
+[1.080980] (create_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/define_song__type_support.cpp.o\x1b[0m\n'}
+[1.106525] (-) TimerEvent: {}
+[1.109225] (create_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/mode__type_support.cpp.o\x1b[0m\n'}
+[1.109506] (create_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/charging_state__type_support.cpp.o\x1b[0m\n'}
+[1.134091] (create_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/play_song__type_support_c.cpp.o\x1b[0m\n'}
+[1.152116] (create_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/charging_state__type_support.cpp.o\x1b[0m\n'}
+[1.206629] (-) TimerEvent: {}
+[1.304499] (create_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/motor_setpoint__type_support_c.cpp.o\x1b[0m\n'}
+[1.306733] (-) TimerEvent: {}
+[1.405501] (create_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/cliff__type_support_c.cpp.o\x1b[0m\n'}
+[1.406844] (-) TimerEvent: {}
+[1.507194] (-) TimerEvent: {}
+[1.607539] (-) TimerEvent: {}
+[1.707910] (-) TimerEvent: {}
+[1.768044] (create_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/define_song__type_support.cpp.o\x1b[0m\n'}
+[1.773246] (create_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/mode__type_support.cpp.o\x1b[0m\n'}
+[1.807987] (-) TimerEvent: {}
+[1.883326] (create_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/play_song__type_support.cpp.o\x1b[0m\n'}
+[1.908095] (-) TimerEvent: {}
+[2.003542] (create_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/define_song__type_support.cpp.o\x1b[0m\n'}
+[2.005113] (create_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/play_song__type_support.cpp.o\x1b[0m\n'}
+[2.008203] (-) TimerEvent: {}
+[2.054102] (create_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/mode__type_support.cpp.o\x1b[0m\n'}
+[2.108309] (-) TimerEvent: {}
+[2.162717] (create_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/motor_setpoint__type_support.cpp.o\x1b[0m\n'}
+[2.208422] (-) TimerEvent: {}
+[2.281065] (create_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.308528] (-) TimerEvent: {}
+[2.411981] (-) TimerEvent: {}
+[2.512353] (-) TimerEvent: {}
+[2.538735] (create_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/motor_setpoint__type_support.cpp.o\x1b[0m\n'}
+[2.606993] (create_msgs) StdoutLine: {'line': b'[ 67%] Built target create_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.613786] (-) TimerEvent: {}
+[2.633636] (create_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/play_song__type_support.cpp.o\x1b[0m\n'}
+[2.713897] (-) TimerEvent: {}
+[2.816992] (-) TimerEvent: {}
+[2.917340] (-) TimerEvent: {}
+[2.981766] (create_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/cliff__type_support.cpp.o\x1b[0m\n'}
+[3.017449] (-) TimerEvent: {}
+[3.050030] (create_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/cliff__type_support.cpp.o\x1b[0m\n'}
+[3.119981] (-) TimerEvent: {}
+[3.162860] (create_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/motor_setpoint__type_support.cpp.o\x1b[0m\n'}
+[3.203536] (create_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/cliff__type_support.cpp.o\x1b[0m\n'}
+[3.220088] (-) TimerEvent: {}
+[3.320559] (-) TimerEvent: {}
+[3.420889] (-) TimerEvent: {}
+[3.521241] (-) TimerEvent: {}
+[3.621604] (-) TimerEvent: {}
+[3.622624] (create_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.701907] (create_msgs) StdoutLine: {'line': b'[ 75%] Built target create_msgs__rosidl_typesupport_cpp\n'}
+[3.721714] (-) TimerEvent: {}
+[3.772535] (create_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.821825] (-) TimerEvent: {}
+[3.870623] (create_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.897070] (create_msgs) StdoutLine: {'line': b'[ 79%] Built target create_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.921967] (-) TimerEvent: {}
+[3.969430] (create_msgs) StdoutLine: {'line': b'[ 81%] Built target create_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.994408] (create_msgs) StdoutLine: {'line': b'[ 81%] Built target create_msgs\n'}
+[4.020567] (create_msgs) StdoutLine: {'line': b'[ 82%] Built target create_msgs__py\n'}
+[4.022070] (-) TimerEvent: {}
+[4.062361] (create_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_charging_state_s.c.o\x1b[0m\n'}
+[4.063057] (create_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_mode_s.c.o\x1b[0m\n'}
+[4.063544] (create_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_define_song_s.c.o\x1b[0m\n'}
+[4.064156] (create_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_bumper_s.c.o\x1b[0m\n'}
+[4.069861] (create_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_play_song_s.c.o\x1b[0m\n'}
+[4.071711] (create_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_cliff_s.c.o\x1b[0m\n'}
+[4.074685] (create_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_motor_setpoint_s.c.o\x1b[0m\n'}
+[4.124980] (-) TimerEvent: {}
+[4.228986] (-) TimerEvent: {}
+[4.329323] (-) TimerEvent: {}
+[4.386820] (create_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_msgs/libcreate_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.429433] (-) TimerEvent: {}
+[4.440994] (create_msgs) StdoutLine: {'line': b'[ 92%] Built target create_msgs__rosidl_generator_py\n'}
+[4.475601] (create_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.477831] (create_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.478101] (create_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.529544] (-) TimerEvent: {}
+[4.612645] (create_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.629661] (-) TimerEvent: {}
+[4.661434] (create_msgs) StdoutLine: {'line': b'[ 97%] Built target create_msgs__rosidl_typesupport_c__pyext\n'}
+[4.685892] (create_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.689200] (create_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.729770] (-) TimerEvent: {}
+[4.738228] (create_msgs) StdoutLine: {'line': b'[100%] Built target create_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.749416] (create_msgs) StdoutLine: {'line': b'[100%] Built target create_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.765266] (create_msgs) CommandEnded: {'returncode': 0}
+[4.766690] (create_msgs) JobProgress: {'identifier': 'create_msgs', 'progress': 'install'}
+[4.767104] (create_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/create_msgs'], 'cwd': '/home/user/create_ws/build/create_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[4.777743] (create_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.778017] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/ament_index/resource_index/rosidl_interfaces/create_msgs\n'}
+[4.778261] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.778439] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.778637] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.h\n'}
+[4.778773] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.h\n'}
+[4.778938] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.h\n'}
+[4.779242] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.h\n'}
+[4.779375] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.779500] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.779620] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.h\n'}
+[4.779744] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.h\n'}
+[4.779862] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__functions.h\n'}
+[4.780144] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__functions.c\n'}
+[4.780268] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.h\n'}
+[4.780394] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.h\n'}
+[4.780506] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.h\n'}
+[4.780616] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.h\n'}
+[4.780727] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__functions.c\n'}
+[4.780847] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__functions.h\n'}
+[4.781028] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__functions.c\n'}
+[4.781234] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__functions.c\n'}
+[4.781357] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.h\n'}
+[4.781540] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.h\n'}
+[4.781657] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__functions.h\n'}
+[4.781773] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.h\n'}
+[4.781889] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.h\n'}
+[4.782026] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.h\n'}
+[4.782153] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.h\n'}
+[4.782278] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__functions.h\n'}
+[4.782395] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__functions.h\n'}
+[4.782519] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__functions.c\n'}
+[4.782739] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__functions.c\n'}
+[4.782867] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.h\n'}
+[4.783155] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__functions.h\n'}
+[4.783319] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__functions.h\n'}
+[4.783437] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__functions.c\n'}
+[4.783552] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.h\n'}
+[4.783662] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/mode.h\n'}
+[4.783767] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.h\n'}
+[4.783870] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.h\n'}
+[4.784038] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/library_path.sh\n'}
+[4.784154] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/library_path.dsv\n'}
+[4.784259] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_c.so\n'}
+[4.784367] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.784477] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.784590] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.784761] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.784931] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785191] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785311] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785428] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785543] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785660] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785777] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_c.h\n'}
+[4.785896] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.786229] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.786421] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.786547] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.786661] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.786773] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.c\n'}
+[4.786885] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h\n'}
+[4.787081] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.c\n'}
+[4.787207] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_c.h\n'}
+[4.787328] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.c\n'}
+[4.787445] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_c.h\n'}
+[4.787605] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.c\n'}
+[4.787727] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_c.h\n'}
+[4.787847] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_c.h\n'}
+[4.788098] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.c\n'}
+[4.788314] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.c\n'}
+[4.788433] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_c.h\n'}
+[4.788550] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_c.h\n'}
+[4.788666] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.c\n'}
+[4.788780] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.788903] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.789115] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_c.so\n'}
+[4.789237] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.789351] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.789460] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.hpp\n'}
+[4.789573] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.hpp\n'}
+[4.789688] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.hpp\n'}
+[4.789803] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/mode.hpp\n'}
+[4.789912] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.hpp\n'}
+[4.790080] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.790194] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__builder.hpp\n'}
+[4.790312] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__traits.hpp\n'}
+[4.790440] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__builder.hpp\n'}
+[4.790558] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__traits.hpp\n'}
+[4.790679] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.hpp\n'}
+[4.790793] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.hpp\n'}
+[4.790906] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.hpp\n'}
+[4.791142] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__builder.hpp\n'}
+[4.791281] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.hpp\n'}
+[4.791392] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__traits.hpp\n'}
+[4.791541] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__builder.hpp\n'}
+[4.791660] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.hpp\n'}
+[4.791788] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.hpp\n'}
+[4.791905] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__builder.hpp\n'}
+[4.792224] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__traits.hpp\n'}
+[4.792350] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.hpp\n'}
+[4.792465] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.hpp\n'}
+[4.792572] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__traits.hpp\n'}
+[4.792678] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.hpp\n'}
+[4.792785] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.hpp\n'}
+[4.792895] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__builder.hpp\n'}
+[4.793105] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__traits.hpp\n'}
+[4.793218] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.hpp\n'}
+[4.793323] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__builder.hpp\n'}
+[4.793431] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__traits.hpp\n'}
+[4.793530] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.hpp\n'}
+[4.793627] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.hpp\n'}
+[4.793727] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.hpp\n'}
+[4.793826] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.hpp\n'}
+[4.793944] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.hpp\n'}
+[4.794069] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.794178] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.794281] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.794393] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.794515] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.794622] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.794728] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.794827] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.794932] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.795044] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.795149] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.795248] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.795348] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/dds_fastrtps\n'}
+[4.795446] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.795548] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.795648] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs\n'}
+[4.795749] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg\n'}
+[4.795850] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail\n'}
+[4.795968] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.cpp\n'}
+[4.796088] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.796186] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.cpp\n'}
+[4.796286] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.cpp\n'}
+[4.796384] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.cpp\n'}
+[4.796484] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.cpp\n'}
+[4.796595] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.796710] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.cpp\n'}
+[4.796827] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.796947] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.cpp\n'}
+[4.797064] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.797171] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.797276] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.797388] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.797499] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.797607] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.797714] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so\n'}
+[4.797823] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.797941] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/pythonpath.sh\n'}
+[4.798064] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/pythonpath.dsv\n'}
+[4.798176] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info\n'}
+[4.798284] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/top_level.txt\n'}
+[4.798387] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.798494] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.798600] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/PKG-INFO\n'}
+[4.798706] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs\n'}
+[4.798810] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg\n'}
+[4.798923] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_cliff.py\n'}
+[4.799044] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_bumper_s.c\n'}
+[4.799156] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_charging_state.py\n'}
+[4.799266] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_play_song.py\n'}
+[4.799382] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_define_song_s.c\n'}
+[4.799498] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_bumper.py\n'}
+[4.799606] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_play_song_s.c\n'}
+[4.799711] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_mode_s.c\n'}
+[4.799819] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_cliff_s.c\n'}
+[4.799943] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_motor_setpoint.py\n'}
+[4.800063] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/__init__.py\n'}
+[4.800176] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_define_song.py\n'}
+[4.800283] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_charging_state_s.c\n'}
+[4.800387] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_mode.py\n'}
+[4.800489] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_motor_setpoint_s.c\n'}
+[4.800596] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.800705] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.800814] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.800929] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/libcreate_msgs__rosidl_generator_py.so\n'}
+[4.801052] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.801159] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.801272] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/__init__.py\n'}
+[4.801380] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.829869] (-) TimerEvent: {}
+[4.835321] (create_msgs) StdoutLine: {'line': b"Listing '/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs'...\n"}
+[4.835538] (create_msgs) StdoutLine: {'line': b"Listing '/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg'...\n"}
+[4.841317] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.841893] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.842299] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.842890] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.843297] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.843889] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.844729] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so\n'}
+[4.845466] (create_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so" to ""\n'}
+[4.845714] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Bumper.idl\n'}
+[4.845960] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/ChargingState.idl\n'}
+[4.846158] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/DefineSong.idl\n'}
+[4.846359] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Mode.idl\n'}
+[4.846490] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/PlaySong.idl\n'}
+[4.846650] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/MotorSetpoint.idl\n'}
+[4.846808] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Cliff.idl\n'}
+[4.846950] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Bumper.msg\n'}
+[4.847096] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/ChargingState.msg\n'}
+[4.847202] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/DefineSong.msg\n'}
+[4.847316] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Mode.msg\n'}
+[4.847462] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/PlaySong.msg\n'}
+[4.847622] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/MotorSetpoint.msg\n'}
+[4.847741] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/msg/Cliff.msg\n'}
+[4.847858] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/ament_index/resource_index/package_run_dependencies/create_msgs\n'}
+[4.848019] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/ament_index/resource_index/parent_prefix_path/create_msgs\n'}
+[4.848134] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/ament_prefix_path.sh\n'}
+[4.848256] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/ament_prefix_path.dsv\n'}
+[4.848366] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/path.sh\n'}
+[4.848502] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/environment/path.dsv\n'}
+[4.848608] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/local_setup.bash\n'}
+[4.848712] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/local_setup.sh\n'}
+[4.848816] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/local_setup.zsh\n'}
+[4.848932] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/local_setup.dsv\n'}
+[4.849062] (create_msgs) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_msgs/share/create_msgs/package.dsv\n'}
+[4.849169] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/ament_index/resource_index/packages/create_msgs\n'}
+[4.849547] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport.cmake\n'}
+[4.849792] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.850187] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.850425] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.850807] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.850995] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.851431] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.851699] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.852084] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.852591] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.852797] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.853184] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.853463] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.853806] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.853995] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.854380] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.854600] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.854787] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.855005] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.855239] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.855394] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.855551] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.855659] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.855765] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.855873] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgsConfig.cmake\n'}
+[4.856009] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/cmake/create_msgsConfig-version.cmake\n'}
+[4.856124] (create_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_msgs/share/create_msgs/package.xml\n'}
+[4.858876] (create_msgs) CommandEnded: {'returncode': 0}
+[4.877955] (create_msgs) JobEnded: {'identifier': 'create_msgs', 'rc': 0}
+[4.930016] (-) TimerEvent: {}
+[5.030317] (-) TimerEvent: {}
+[5.130656] (-) TimerEvent: {}
+[5.231021] (-) TimerEvent: {}
+[5.331379] (-) TimerEvent: {}
+[5.431641] (-) TimerEvent: {}
+[5.448559] (libcreate) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library libcreate.so\x1b[0m\n'}
+[5.531759] (-) TimerEvent: {}
+[5.632083] (-) TimerEvent: {}
+[5.634927] (libcreate) StdoutLine: {'line': b'[ 22%] Built target create\n'}
+[5.690609] (libcreate) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/bumpers.dir/examples/bumpers.cpp.o\x1b[0m\n'}
+[5.690887] (libcreate) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/battery_level.dir/examples/battery_level.cpp.o\x1b[0m\n'}
+[5.691030] (libcreate) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cliffs.dir/examples/cliffs.cpp.o\x1b[0m\n'}
+[5.691141] (libcreate) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/drive_circle.dir/examples/drive_circle.cpp.o\x1b[0m\n'}
+[5.691262] (libcreate) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/packets.dir/examples/packets.cpp.o\x1b[0m\n'}
+[5.691361] (libcreate) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/play_song.dir/examples/play_song.cpp.o\x1b[0m\n'}
+[5.691458] (libcreate) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/leds.dir/examples/leds.cpp.o\x1b[0m\n'}
+[5.693319] (libcreate) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/wheeldrop.dir/examples/wheeldrop.cpp.o\x1b[0m\n'}
+[5.735970] (-) TimerEvent: {}
+[5.836283] (-) TimerEvent: {}
+[5.936621] (-) TimerEvent: {}
+[6.036913] (-) TimerEvent: {}
+[6.137212] (-) TimerEvent: {}
+[6.237535] (-) TimerEvent: {}
+[6.337897] (-) TimerEvent: {}
+[6.438262] (-) TimerEvent: {}
+[6.538606] (-) TimerEvent: {}
+[6.638967] (-) TimerEvent: {}
+[6.739276] (-) TimerEvent: {}
+[6.839601] (-) TimerEvent: {}
+[6.939953] (-) TimerEvent: {}
+[7.040289] (-) TimerEvent: {}
+[7.144139] (-) TimerEvent: {}
+[7.244484] (-) TimerEvent: {}
+[7.344842] (-) TimerEvent: {}
+[7.445212] (-) TimerEvent: {}
+[7.545566] (-) TimerEvent: {}
+[7.645935] (-) TimerEvent: {}
+[7.746277] (-) TimerEvent: {}
+[7.846615] (-) TimerEvent: {}
+[7.946969] (-) TimerEvent: {}
+[8.047309] (-) TimerEvent: {}
+[8.147650] (-) TimerEvent: {}
+[8.248004] (-) TimerEvent: {}
+[8.351995] (-) TimerEvent: {}
+[8.452389] (-) TimerEvent: {}
+[8.552719] (-) TimerEvent: {}
+[8.653047] (-) TimerEvent: {}
+[8.753368] (-) TimerEvent: {}
+[8.853696] (-) TimerEvent: {}
+[8.953995] (-) TimerEvent: {}
+[9.054329] (-) TimerEvent: {}
+[9.154643] (-) TimerEvent: {}
+[9.190042] (libcreate) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX executable cliffs\x1b[0m\n'}
+[9.191761] (libcreate) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable play_song\x1b[0m\n'}
+[9.197391] (libcreate) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable leds\x1b[0m\n'}
+[9.200392] (libcreate) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX executable bumpers\x1b[0m\n'}
+[9.203438] (libcreate) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable battery_level\x1b[0m\n'}
+[9.204303] (libcreate) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable wheeldrop\x1b[0m\n'}
+[9.215084] (libcreate) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable packets\x1b[0m\n'}
+[9.254785] (-) TimerEvent: {}
+[9.358247] (-) TimerEvent: {}
+[9.398694] (libcreate) StdoutLine: {'line': b'[ 63%] Built target cliffs\n'}
+[9.402580] (libcreate) StdoutLine: {'line': b'[ 63%] Built target bumpers\n'}
+[9.405376] (libcreate) StdoutLine: {'line': b'[ 63%] Built target play_song\n'}
+[9.415171] (libcreate) StdoutLine: {'line': b'[ 63%] Built target battery_level\n'}
+[9.418268] (libcreate) StdoutLine: {'line': b'[ 63%] Built target leds\n'}
+[9.419292] (libcreate) StdoutLine: {'line': b'[ 63%] Built target wheeldrop\n'}
+[9.421675] (libcreate) StdoutLine: {'line': b'[ 63%] Built target packets\n'}
+[9.440732] (libcreate) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/test_data.dir/tests/test_data.cpp.o\x1b[0m\n'}
+[9.444578] (libcreate) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/test_packet.dir/tests/test_packet.cpp.o\x1b[0m\n'}
+[9.453078] (libcreate) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/test_robot_model.dir/tests/test_robot_model.cpp.o\x1b[0m\n'}
+[9.454404] (libcreate) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/test_create.dir/tests/test_create.cpp.o\x1b[0m\n'}
+[9.458342] (-) TimerEvent: {}
+[9.469683] (libcreate) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/test_serial_stream.dir/tests/test_serial_stream.cpp.o\x1b[0m\n'}
+[9.470437] (libcreate) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable drive_circle\x1b[0m\n'}
+[9.473809] (libcreate) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/test_serial_query.dir/tests/test_serial_query.cpp.o\x1b[0m\n'}
+[9.558455] (-) TimerEvent: {}
+[9.636795] (libcreate) StdoutLine: {'line': b'[ 83%] Built target drive_circle\n'}
+[9.658562] (-) TimerEvent: {}
+[9.758974] (-) TimerEvent: {}
+[9.860513] (-) TimerEvent: {}
+[9.960813] (-) TimerEvent: {}
+[10.061152] (-) TimerEvent: {}
+[10.161483] (-) TimerEvent: {}
+[10.261808] (-) TimerEvent: {}
+[10.362132] (-) TimerEvent: {}
+[10.462446] (-) TimerEvent: {}
+[10.562778] (-) TimerEvent: {}
+[10.634789] (libcreate) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable test_robot_model\x1b[0m\n'}
+[10.663000] (-) TimerEvent: {}
+[10.700205] (libcreate) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable test_packet\x1b[0m\n'}
+[10.763115] (-) TimerEvent: {}
+[10.843081] (libcreate) StdoutLine: {'line': b'[ 88%] Built target test_robot_model\n'}
+[10.849343] (libcreate) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable test_data\x1b[0m\n'}
+[10.863237] (-) TimerEvent: {}
+[10.883198] (libcreate) StdoutLine: {'line': b'[ 91%] Built target test_packet\n'}
+[10.963354] (-) TimerEvent: {}
+[11.003906] (libcreate) StdoutLine: {'line': b'[ 91%] Built target test_data\n'}
+[11.063478] (-) TimerEvent: {}
+[11.163748] (-) TimerEvent: {}
+[11.264004] (-) TimerEvent: {}
+[11.364277] (-) TimerEvent: {}
+[11.464558] (-) TimerEvent: {}
+[11.564836] (-) TimerEvent: {}
+[11.665087] (-) TimerEvent: {}
+[11.687696] (libcreate) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_serial_query\x1b[0m\n'}
+[11.765204] (-) TimerEvent: {}
+[11.836643] (libcreate) StdoutLine: {'line': b'[ 94%] Built target test_serial_query\n'}
+[11.865332] (-) TimerEvent: {}
+[11.914224] (libcreate) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable test_serial_stream\x1b[0m\n'}
+[11.965470] (-) TimerEvent: {}
+[12.050768] (libcreate) StdoutLine: {'line': b'[ 97%] Built target test_serial_stream\n'}
+[12.065593] (-) TimerEvent: {}
+[12.165863] (-) TimerEvent: {}
+[12.183730] (libcreate) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_create\x1b[0m\n'}
+[12.265990] (-) TimerEvent: {}
+[12.302694] (libcreate) StdoutLine: {'line': b'[100%] Built target test_create\n'}
+[12.315701] (libcreate) CommandEnded: {'returncode': 0}
+[12.317120] (libcreate) JobProgress: {'identifier': 'libcreate', 'progress': 'install'}
+[12.317438] (libcreate) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/libcreate'], 'cwd': '/home/user/create_ws/build/libcreate', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/libcreate'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[12.326606] (libcreate) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.327292] (libcreate) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/libcreate/lib/libcreate.so\n'}
+[12.329319] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include\n'}
+[12.329532] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create\n'}
+[12.329750] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial.h\n'}
+[12.329964] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_query.h\n'}
+[12.330116] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/util.h\n'}
+[12.330230] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/packet.h\n'}
+[12.330358] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/data.h\n'}
+[12.330499] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/types.h\n'}
+[12.330608] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_stream.h\n'}
+[12.330714] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/create.h\n'}
+[12.330821] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake\n'}
+[12.330974] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake\n'}
+[12.331287] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake\n'}
+[12.331501] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake\n'}
+[12.331648] (libcreate) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/libcreate/share/libcreate/package.xml\n'}
+[12.333155] (libcreate) CommandEnded: {'returncode': 0}
+[12.345708] (libcreate) JobEnded: {'identifier': 'libcreate', 'rc': 0}
+[12.346168] (create_driver) JobStarted: {'identifier': 'create_driver'}
+[12.357893] (create_driver) JobProgress: {'identifier': 'create_driver', 'progress': 'cmake'}
+[12.359035] (create_driver) JobProgress: {'identifier': 'create_driver', 'progress': 'build'}
+[12.359461] (create_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/create_driver', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/create_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[12.366061] (-) TimerEvent: {}
+[12.418167] (create_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[12.466185] (-) TimerEvent: {}
+[12.554803] (create_driver) StdoutLine: {'line': b'-- Found create_msgs: 3.1.0 (/home/user/create_ws/install/create_msgs/share/create_msgs/cmake)\n'}
+[12.566281] (-) TimerEvent: {}
+[12.587731] (create_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[12.591008] (create_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[12.599121] (create_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[12.611522] (create_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.628681] (create_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.666389] (-) TimerEvent: {}
+[12.670873] (create_driver) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.8.0 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[12.687064] (create_driver) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.3 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[12.725269] (create_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[12.727744] (create_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[12.766498] (-) TimerEvent: {}
+[12.846618] (create_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.866612] (-) TimerEvent: {}
+[12.895432] (create_driver) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[12.910691] (create_driver) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[12.930370] (create_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[12.949747] (create_driver) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[12.954580] (create_driver) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[12.956031] (create_driver) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[12.966705] (-) TimerEvent: {}
+[13.063540] (create_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.066812] (-) TimerEvent: {}
+[13.138508] (create_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.138642] (create_driver) StdoutLine: {'line': b'-- Configured cppcheck language: c++\n'}
+[13.138823] (create_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/user/create_ws/src/create_robot/create_driver/include\n'}
+[13.138908] (create_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.139839] (create_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[13.139979] (create_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[13.140758] (create_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.141541] (create_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.143067] (create_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.160820] (create_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[13.166058] (create_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/user/create_ws/build/create_driver\n'}
+[13.166944] (-) TimerEvent: {}
+[13.195635] (create_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target create_driver\x1b[0m\n'}
+[13.244711] (create_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/create_driver.dir/src/create_driver.cpp.o\x1b[0m\n'}
+[13.267044] (-) TimerEvent: {}
+[13.367392] (-) TimerEvent: {}
+[13.467739] (-) TimerEvent: {}
+[13.568070] (-) TimerEvent: {}
+[13.668371] (-) TimerEvent: {}
+[13.768682] (-) TimerEvent: {}
+[13.869021] (-) TimerEvent: {}
+[13.969338] (-) TimerEvent: {}
+[14.069688] (-) TimerEvent: {}
+[14.170010] (-) TimerEvent: {}
+[14.270348] (-) TimerEvent: {}
+[14.370687] (-) TimerEvent: {}
+[14.471010] (-) TimerEvent: {}
+[14.571304] (-) TimerEvent: {}
+[14.671642] (-) TimerEvent: {}
+[14.772007] (-) TimerEvent: {}
+[14.872334] (-) TimerEvent: {}
+[14.972661] (-) TimerEvent: {}
+[15.072982] (-) TimerEvent: {}
+[15.173339] (-) TimerEvent: {}
+[15.273737] (-) TimerEvent: {}
+[15.374060] (-) TimerEvent: {}
+[15.474362] (-) TimerEvent: {}
+[15.574671] (-) TimerEvent: {}
+[15.674976] (-) TimerEvent: {}
+[15.775301] (-) TimerEvent: {}
+[15.875586] (-) TimerEvent: {}
+[15.975897] (-) TimerEvent: {}
+[16.076215] (-) TimerEvent: {}
+[16.176516] (-) TimerEvent: {}
+[16.276822] (-) TimerEvent: {}
+[16.377129] (-) TimerEvent: {}
+[16.477409] (-) TimerEvent: {}
+[16.577716] (-) TimerEvent: {}
+[16.678022] (-) TimerEvent: {}
+[16.778325] (-) TimerEvent: {}
+[16.878664] (-) TimerEvent: {}
+[16.978971] (-) TimerEvent: {}
+[17.079273] (-) TimerEvent: {}
+[17.179571] (-) TimerEvent: {}
+[17.279882] (-) TimerEvent: {}
+[17.380207] (-) TimerEvent: {}
+[17.480509] (-) TimerEvent: {}
+[17.580811] (-) TimerEvent: {}
+[17.681128] (-) TimerEvent: {}
+[17.781434] (-) TimerEvent: {}
+[17.881739] (-) TimerEvent: {}
+[17.982037] (-) TimerEvent: {}
+[18.082344] (-) TimerEvent: {}
+[18.182626] (-) TimerEvent: {}
+[18.282946] (-) TimerEvent: {}
+[18.383253] (-) TimerEvent: {}
+[18.483556] (-) TimerEvent: {}
+[18.583862] (-) TimerEvent: {}
+[18.684177] (-) TimerEvent: {}
+[18.784484] (-) TimerEvent: {}
+[18.884793] (-) TimerEvent: {}
+[18.985113] (-) TimerEvent: {}
+[19.085415] (-) TimerEvent: {}
+[19.185714] (-) TimerEvent: {}
+[19.286014] (-) TimerEvent: {}
+[19.386301] (-) TimerEvent: {}
+[19.486680] (-) TimerEvent: {}
+[19.587001] (-) TimerEvent: {}
+[19.687293] (-) TimerEvent: {}
+[19.787595] (-) TimerEvent: {}
+[19.887925] (-) TimerEvent: {}
+[19.988289] (-) TimerEvent: {}
+[20.088629] (-) TimerEvent: {}
+[20.188961] (-) TimerEvent: {}
+[20.289262] (-) TimerEvent: {}
+[20.389563] (-) TimerEvent: {}
+[20.489865] (-) TimerEvent: {}
+[20.590154] (-) TimerEvent: {}
+[20.690434] (-) TimerEvent: {}
+[20.790735] (-) TimerEvent: {}
+[20.891037] (-) TimerEvent: {}
+[20.991336] (-) TimerEvent: {}
+[21.091640] (-) TimerEvent: {}
+[21.191951] (-) TimerEvent: {}
+[21.292250] (-) TimerEvent: {}
+[21.392553] (-) TimerEvent: {}
+[21.492858] (-) TimerEvent: {}
+[21.593182] (-) TimerEvent: {}
+[21.693488] (-) TimerEvent: {}
+[21.793792] (-) TimerEvent: {}
+[21.894117] (-) TimerEvent: {}
+[21.994432] (-) TimerEvent: {}
+[22.094714] (-) TimerEvent: {}
+[22.194995] (-) TimerEvent: {}
+[22.295284] (-) TimerEvent: {}
+[22.395527] (-) TimerEvent: {}
+[22.495821] (-) TimerEvent: {}
+[22.596141] (-) TimerEvent: {}
+[22.696431] (-) TimerEvent: {}
+[22.796738] (-) TimerEvent: {}
+[22.897040] (-) TimerEvent: {}
+[22.997319] (-) TimerEvent: {}
+[23.097620] (-) TimerEvent: {}
+[23.197887] (-) TimerEvent: {}
+[23.298235] (-) TimerEvent: {}
+[23.398533] (-) TimerEvent: {}
+[23.498822] (-) TimerEvent: {}
+[23.599152] (-) TimerEvent: {}
+[23.699445] (-) TimerEvent: {}
+[23.799736] (-) TimerEvent: {}
+[23.900025] (-) TimerEvent: {}
+[24.000343] (-) TimerEvent: {}
+[24.100636] (-) TimerEvent: {}
+[24.200974] (-) TimerEvent: {}
+[24.301278] (-) TimerEvent: {}
+[24.401591] (-) TimerEvent: {}
+[24.501894] (-) TimerEvent: {}
+[24.602254] (-) TimerEvent: {}
+[24.702564] (-) TimerEvent: {}
+[24.802852] (-) TimerEvent: {}
+[24.903196] (-) TimerEvent: {}
+[25.003509] (-) TimerEvent: {}
+[25.103814] (-) TimerEvent: {}
+[25.204126] (-) TimerEvent: {}
+[25.304428] (-) TimerEvent: {}
+[25.404722] (-) TimerEvent: {}
+[25.505020] (-) TimerEvent: {}
+[25.605324] (-) TimerEvent: {}
+[25.705609] (-) TimerEvent: {}
+[25.805891] (-) TimerEvent: {}
+[25.906220] (-) TimerEvent: {}
+[26.006498] (-) TimerEvent: {}
+[26.106804] (-) TimerEvent: {}
+[26.207125] (-) TimerEvent: {}
+[26.307426] (-) TimerEvent: {}
+[26.407723] (-) TimerEvent: {}
+[26.508020] (-) TimerEvent: {}
+[26.608300] (-) TimerEvent: {}
+[26.708599] (-) TimerEvent: {}
+[26.808905] (-) TimerEvent: {}
+[26.909235] (-) TimerEvent: {}
+[27.009540] (-) TimerEvent: {}
+[27.109854] (-) TimerEvent: {}
+[27.210152] (-) TimerEvent: {}
+[27.310435] (-) TimerEvent: {}
+[27.410729] (-) TimerEvent: {}
+[27.511025] (-) TimerEvent: {}
+[27.611319] (-) TimerEvent: {}
+[27.711609] (-) TimerEvent: {}
+[27.811903] (-) TimerEvent: {}
+[27.912236] (-) TimerEvent: {}
+[28.012533] (-) TimerEvent: {}
+[28.112840] (-) TimerEvent: {}
+[28.213165] (-) TimerEvent: {}
+[28.313479] (-) TimerEvent: {}
+[28.413797] (-) TimerEvent: {}
+[28.514148] (-) TimerEvent: {}
+[28.614468] (-) TimerEvent: {}
+[28.714774] (-) TimerEvent: {}
+[28.815077] (-) TimerEvent: {}
+[28.915371] (-) TimerEvent: {}
+[29.015660] (-) TimerEvent: {}
+[29.115965] (-) TimerEvent: {}
+[29.216274] (-) TimerEvent: {}
+[29.316543] (-) TimerEvent: {}
+[29.416824] (-) TimerEvent: {}
+[29.517149] (-) TimerEvent: {}
+[29.617424] (-) TimerEvent: {}
+[29.717699] (-) TimerEvent: {}
+[29.817995] (-) TimerEvent: {}
+[29.918292] (-) TimerEvent: {}
+[30.018588] (-) TimerEvent: {}
+[30.118884] (-) TimerEvent: {}
+[30.219217] (-) TimerEvent: {}
+[30.319514] (-) TimerEvent: {}
+[30.419813] (-) TimerEvent: {}
+[30.520123] (-) TimerEvent: {}
+[30.620422] (-) TimerEvent: {}
+[30.720718] (-) TimerEvent: {}
+[30.821012] (-) TimerEvent: {}
+[30.921303] (-) TimerEvent: {}
+[31.021601] (-) TimerEvent: {}
+[31.121898] (-) TimerEvent: {}
+[31.222229] (-) TimerEvent: {}
+[31.322507] (-) TimerEvent: {}
+[31.422807] (-) TimerEvent: {}
+[31.523117] (-) TimerEvent: {}
+[31.623420] (-) TimerEvent: {}
+[31.723700] (-) TimerEvent: {}
+[31.823997] (-) TimerEvent: {}
+[31.924274] (-) TimerEvent: {}
+[32.024568] (-) TimerEvent: {}
+[32.124860] (-) TimerEvent: {}
+[32.225194] (-) TimerEvent: {}
+[32.325492] (-) TimerEvent: {}
+[32.425789] (-) TimerEvent: {}
+[32.526107] (-) TimerEvent: {}
+[32.626383] (-) TimerEvent: {}
+[32.726679] (-) TimerEvent: {}
+[32.826976] (-) TimerEvent: {}
+[32.927286] (-) TimerEvent: {}
+[33.027578] (-) TimerEvent: {}
+[33.127876] (-) TimerEvent: {}
+[33.228218] (-) TimerEvent: {}
+[33.328511] (-) TimerEvent: {}
+[33.428808] (-) TimerEvent: {}
+[33.529136] (-) TimerEvent: {}
+[33.629439] (-) TimerEvent: {}
+[33.729733] (-) TimerEvent: {}
+[33.830026] (-) TimerEvent: {}
+[33.930323] (-) TimerEvent: {}
+[34.030621] (-) TimerEvent: {}
+[34.130942] (-) TimerEvent: {}
+[34.231249] (-) TimerEvent: {}
+[34.331545] (-) TimerEvent: {}
+[34.431836] (-) TimerEvent: {}
+[34.532149] (-) TimerEvent: {}
+[34.632444] (-) TimerEvent: {}
+[34.732725] (-) TimerEvent: {}
+[34.833001] (-) TimerEvent: {}
+[34.933293] (-) TimerEvent: {}
+[35.033583] (-) TimerEvent: {}
+[35.133882] (-) TimerEvent: {}
+[35.234217] (-) TimerEvent: {}
+[35.334509] (-) TimerEvent: {}
+[35.434784] (-) TimerEvent: {}
+[35.535086] (-) TimerEvent: {}
+[35.635380] (-) TimerEvent: {}
+[35.735676] (-) TimerEvent: {}
+[35.835978] (-) TimerEvent: {}
+[35.936273] (-) TimerEvent: {}
+[36.036573] (-) TimerEvent: {}
+[36.136869] (-) TimerEvent: {}
+[36.237206] (-) TimerEvent: {}
+[36.337482] (-) TimerEvent: {}
+[36.437758] (-) TimerEvent: {}
+[36.538036] (-) TimerEvent: {}
+[36.638316] (-) TimerEvent: {}
+[36.738590] (-) TimerEvent: {}
+[36.838864] (-) TimerEvent: {}
+[36.939177] (-) TimerEvent: {}
+[37.039455] (-) TimerEvent: {}
+[37.139729] (-) TimerEvent: {}
+[37.240006] (-) TimerEvent: {}
+[37.340282] (-) TimerEvent: {}
+[37.440559] (-) TimerEvent: {}
+[37.540838] (-) TimerEvent: {}
+[37.641157] (-) TimerEvent: {}
+[37.741435] (-) TimerEvent: {}
+[37.841711] (-) TimerEvent: {}
+[37.942017] (-) TimerEvent: {}
+[38.042286] (-) TimerEvent: {}
+[38.142561] (-) TimerEvent: {}
+[38.242839] (-) TimerEvent: {}
+[38.343158] (-) TimerEvent: {}
+[38.443450] (-) TimerEvent: {}
+[38.543744] (-) TimerEvent: {}
+[38.644037] (-) TimerEvent: {}
+[38.744331] (-) TimerEvent: {}
+[38.844626] (-) TimerEvent: {}
+[38.944947] (-) TimerEvent: {}
+[39.045254] (-) TimerEvent: {}
+[39.145550] (-) TimerEvent: {}
+[39.245843] (-) TimerEvent: {}
+[39.346156] (-) TimerEvent: {}
+[39.446452] (-) TimerEvent: {}
+[39.546838] (-) TimerEvent: {}
+[39.647378] (-) TimerEvent: {}
+[39.747704] (-) TimerEvent: {}
+[39.847993] (-) TimerEvent: {}
+[39.948278] (-) TimerEvent: {}
+[40.048562] (-) TimerEvent: {}
+[40.148846] (-) TimerEvent: {}
+[40.249152] (-) TimerEvent: {}
+[40.349440] (-) TimerEvent: {}
+[40.449722] (-) TimerEvent: {}
+[40.550005] (-) TimerEvent: {}
+[40.650288] (-) TimerEvent: {}
+[40.750574] (-) TimerEvent: {}
+[40.850859] (-) TimerEvent: {}
+[40.951162] (-) TimerEvent: {}
+[41.051452] (-) TimerEvent: {}
+[41.151752] (-) TimerEvent: {}
+[41.251990] (-) TimerEvent: {}
+[41.352270] (-) TimerEvent: {}
+[41.452551] (-) TimerEvent: {}
+[41.552845] (-) TimerEvent: {}
+[41.653180] (-) TimerEvent: {}
+[41.753468] (-) TimerEvent: {}
+[41.853759] (-) TimerEvent: {}
+[41.954056] (-) TimerEvent: {}
+[41.986166] (create_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable create_driver\x1b[0m\n'}
+[42.054179] (-) TimerEvent: {}
+[42.154550] (-) TimerEvent: {}
+[42.254944] (-) TimerEvent: {}
+[42.355270] (-) TimerEvent: {}
+[42.455614] (-) TimerEvent: {}
+[42.555955] (-) TimerEvent: {}
+[42.656289] (-) TimerEvent: {}
+[42.756625] (-) TimerEvent: {}
+[42.856981] (-) TimerEvent: {}
+[42.957331] (-) TimerEvent: {}
+[43.057636] (-) TimerEvent: {}
+[43.157957] (-) TimerEvent: {}
+[43.258256] (-) TimerEvent: {}
+[43.358552] (-) TimerEvent: {}
+[43.458858] (-) TimerEvent: {}
+[43.559201] (-) TimerEvent: {}
+[43.659505] (-) TimerEvent: {}
+[43.759797] (-) TimerEvent: {}
+[43.860119] (-) TimerEvent: {}
+[43.960410] (-) TimerEvent: {}
+[44.060700] (-) TimerEvent: {}
+[44.104509] (create_driver) StdoutLine: {'line': b'[100%] Built target create_driver\n'}
+[44.115718] (create_driver) CommandEnded: {'returncode': 0}
+[44.116755] (create_driver) JobProgress: {'identifier': 'create_driver', 'progress': 'install'}
+[44.117593] (create_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/create_driver'], 'cwd': '/home/user/create_ws/build/create_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[44.125630] (create_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.126555] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/lib/create_driver/create_driver\n'}
+[44.140782] (create_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/user/create_ws/install/create_driver/lib/create_driver/create_driver" to ""\n'}
+[44.141049] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/include\n'}
+[44.141266] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/include/create_driver\n'}
+[44.141433] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/include/create_driver/create_driver.h\n'}
+[44.141584] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/package_run_dependencies/create_driver\n'}
+[44.141754] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/parent_prefix_path/create_driver\n'}
+[44.141998] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/environment/ament_prefix_path.sh\n'}
+[44.142145] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/ament_prefix_path.dsv\n'}
+[44.142403] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/environment/path.sh\n'}
+[44.142565] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/path.dsv\n'}
+[44.142811] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.bash\n'}
+[44.143050] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.sh\n'}
+[44.143225] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.zsh\n'}
+[44.143385] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.dsv\n'}
+[44.143488] (create_driver) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_driver/share/create_driver/package.dsv\n'}
+[44.143717] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/packages/create_driver\n'}
+[44.143966] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/cmake/create_driverConfig.cmake\n'}
+[44.144137] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/cmake/create_driverConfig-version.cmake\n'}
+[44.144251] (create_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/package.xml\n'}
+[44.145846] (create_driver) CommandEnded: {'returncode': 0}
+[44.157654] (create_driver) JobEnded: {'identifier': 'create_driver', 'rc': 0}
+[44.158854] (create_bringup) JobStarted: {'identifier': 'create_bringup'}
+[44.160799] (-) TimerEvent: {}
+[44.172598] (create_bringup) JobProgress: {'identifier': 'create_bringup', 'progress': 'cmake'}
+[44.174023] (create_bringup) JobProgress: {'identifier': 'create_bringup', 'progress': 'build'}
+[44.174312] (create_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/create_bringup', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/create_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_bringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[44.217614] (create_bringup) CommandEnded: {'returncode': 0}
+[44.218700] (create_bringup) JobProgress: {'identifier': 'create_bringup', 'progress': 'install'}
+[44.219562] (create_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/create_bringup'], 'cwd': '/home/user/create_ws/build/create_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_bringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[44.228548] (create_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.228822] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/config\n'}
+[44.229124] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/config/dualshock4.yaml\n'}
+[44.229274] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/config/log710.yaml\n'}
+[44.229416] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/config/default.yaml\n'}
+[44.229644] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/config/xbox360.yaml\n'}
+[44.229801] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/launch\n'}
+[44.229949] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/launch/create_1.launch\n'}
+[44.230179] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/launch/roomba_400.launch\n'}
+[44.230359] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/launch/create_2.launch\n'}
+[44.230547] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/launch/joy_teleop.launch\n'}
+[44.230741] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/ament_index/resource_index/package_run_dependencies/create_bringup\n'}
+[44.230911] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/ament_index/resource_index/parent_prefix_path/create_bringup\n'}
+[44.231072] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/environment/ament_prefix_path.sh\n'}
+[44.231210] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/environment/ament_prefix_path.dsv\n'}
+[44.231352] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/environment/path.sh\n'}
+[44.231507] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/environment/path.dsv\n'}
+[44.231699] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/local_setup.bash\n'}
+[44.231877] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/local_setup.sh\n'}
+[44.232022] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/local_setup.zsh\n'}
+[44.232159] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/local_setup.dsv\n'}
+[44.232304] (create_bringup) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_bringup/share/create_bringup/package.dsv\n'}
+[44.232452] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/ament_index/resource_index/packages/create_bringup\n'}
+[44.232599] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/cmake/create_bringupConfig.cmake\n'}
+[44.232747] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/cmake/create_bringupConfig-version.cmake\n'}
+[44.232894] (create_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_bringup/share/create_bringup/package.xml\n'}
+[44.233884] (create_bringup) CommandEnded: {'returncode': 0}
+[44.247552] (create_bringup) JobEnded: {'identifier': 'create_bringup', 'rc': 0}
+[44.248257] (create_robot) JobStarted: {'identifier': 'create_robot'}
+[44.260939] (-) TimerEvent: {}
+[44.262794] (create_robot) JobProgress: {'identifier': 'create_robot', 'progress': 'cmake'}
+[44.264231] (create_robot) JobProgress: {'identifier': 'create_robot', 'progress': 'build'}
+[44.264490] (create_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/create_ws/build/create_robot', '--', '-j8', '-l8'], 'cwd': '/home/user/create_ws/build/create_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_robot'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[44.305539] (create_robot) CommandEnded: {'returncode': 0}
+[44.306509] (create_robot) JobProgress: {'identifier': 'create_robot', 'progress': 'install'}
+[44.307332] (create_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/create_ws/build/create_robot'], 'cwd': '/home/user/create_ws/build/create_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/sweepbot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1604'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/1567,unix/mysweep1:/tmp/.ICE-unix/1567'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/95a8425d_dea1_41da_924e_9ed0c4f4c13e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3U2152'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/create_ws/build/create_robot'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/custom_explorer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble')]), 'shell': False}
+[44.315086] (create_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.315371] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/ament_index/resource_index/package_run_dependencies/create_robot\n'}
+[44.315491] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/ament_index/resource_index/parent_prefix_path/create_robot\n'}
+[44.315562] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/environment/ament_prefix_path.sh\n'}
+[44.315629] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/environment/ament_prefix_path.dsv\n'}
+[44.315694] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/environment/path.sh\n'}
+[44.315756] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/environment/path.dsv\n'}
+[44.315857] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/local_setup.bash\n'}
+[44.315925] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/local_setup.sh\n'}
+[44.315992] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/local_setup.zsh\n'}
+[44.316048] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/local_setup.dsv\n'}
+[44.316103] (create_robot) StdoutLine: {'line': b'-- Installing: /home/user/create_ws/install/create_robot/share/create_robot/package.dsv\n'}
+[44.316245] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/ament_index/resource_index/packages/create_robot\n'}
+[44.316377] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/cmake/create_robotConfig.cmake\n'}
+[44.316445] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/cmake/create_robotConfig-version.cmake\n'}
+[44.316506] (create_robot) StdoutLine: {'line': b'-- Up-to-date: /home/user/create_ws/install/create_robot/share/create_robot/package.xml\n'}
+[44.318408] (create_robot) CommandEnded: {'returncode': 0}
+[44.329882] (create_robot) JobEnded: {'identifier': 'create_robot', 'rc': 0}
+[44.330251] (-) EventReactorShutdown: {}

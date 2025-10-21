@@ -1,0 +1,59 @@
+[0.015s] Invoking command in '/home/user/create_ws/build/create_driver': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/create_ws/build/create_driver -- -j8 -l8
+[0.072s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.204s] -- Found create_msgs: 3.1.0 (/home/user/create_ws/install/create_msgs/share/create_msgs/cmake)
+[0.230s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.233s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.238s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.260s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.299s] -- Found diagnostic_msgs: 4.9.0 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.316s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[0.358s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.365s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.399s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.452s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.469s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.490s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.510s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.515s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.517s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.631s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.706s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.706s] -- Configured cppcheck language: c++
+[0.706s] -- Configured cppcheck include dirs: /home/user/create_ws/src/create_robot/create_driver/include
+[0.706s] -- Configured cppcheck exclude dirs and/or files: 
+[0.707s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.707s] -- Configured cpplint exclude dirs and/or files: 
+[0.708s] -- Added test 'lint_cmake' to check CMake code style
+[0.709s] -- Added test 'xmllint' to check XML markup files
+[0.710s] -- Configuring done
+[0.728s] -- Generating done
+[0.733s] -- Build files have been written to: /home/user/create_ws/build/create_driver
+[0.761s] [35m[1mConsolidate compiler generated dependencies of target create_driver[0m
+[0.811s] [ 50%] [32mBuilding CXX object CMakeFiles/create_driver.dir/src/create_driver.cpp.o[0m
+[29.687s] [100%] [32m[1mLinking CXX executable create_driver[0m
+[31.855s] [100%] Built target create_driver
+[31.867s] Invoked command in '/home/user/create_ws/build/create_driver' returned '0': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/user/create_ws/build/create_driver -- -j8 -l8
+[31.869s] Invoking command in '/home/user/create_ws/build/create_driver': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/create_ws/build/create_driver
+[31.877s] -- Install configuration: ""
+[31.878s] -- Installing: /home/user/create_ws/install/create_driver/lib/create_driver/create_driver
+[31.892s] -- Set runtime path of "/home/user/create_ws/install/create_driver/lib/create_driver/create_driver" to ""
+[31.892s] -- Up-to-date: /home/user/create_ws/install/create_driver/include
+[31.893s] -- Up-to-date: /home/user/create_ws/install/create_driver/include/create_driver
+[31.893s] -- Up-to-date: /home/user/create_ws/install/create_driver/include/create_driver/create_driver.h
+[31.893s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/package_run_dependencies/create_driver
+[31.893s] -- Installing: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/parent_prefix_path/create_driver
+[31.893s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/ament_prefix_path.sh
+[31.893s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/ament_prefix_path.dsv
+[31.894s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/path.sh
+[31.894s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/environment/path.dsv
+[31.894s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.bash
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.sh
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.zsh
+[31.895s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/local_setup.dsv
+[31.895s] -- Installing: /home/user/create_ws/install/create_driver/share/create_driver/package.dsv
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/ament_index/resource_index/packages/create_driver
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/cmake/create_driverConfig.cmake
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/cmake/create_driverConfig-version.cmake
+[31.895s] -- Up-to-date: /home/user/create_ws/install/create_driver/share/create_driver/package.xml
+[31.898s] Invoked command in '/home/user/create_ws/build/create_driver' returned '0': CMAKE_PREFIX_PATH=/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble LD_LIBRARY_PATH=/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/user/create_ws/build/create_driver

@@ -1,0 +1,32 @@
+[ 22%] Built target create
+[ 27%] Built target battery_level
+[ 33%] Built target packets
+[ 38%] Built target drive_circle
+[ 44%] Built target leds
+[ 50%] Built target play_song
+[ 61%] Built target cliffs
+[ 61%] Built target bumpers
+[ 66%] Built target wheeldrop
+[ 72%] Built target test_data
+[ 77%] Built target test_packet
+[ 83%] Built target test_robot_model
+[ 88%] Built target test_create
+[ 94%] Built target test_serial_stream
+[100%] Built target test_serial_query
+-- Install configuration: ""
+-- Up-to-date: /home/user/create_ws/install/libcreate/lib/libcreate.so
+-- Up-to-date: /home/user/create_ws/install/libcreate/include
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_query.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/util.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/packet.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/data.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/types.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_stream.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/include/create/create.h
+-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+-- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+-- Up-to-date: /home/user/create_ws/install/libcreate/share/libcreate/package.xml

@@ -1,0 +1,51 @@
+[0.025s] Invoking command in '/home/user/create_ws/build/libcreate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/libcreate -- -j8 -l8
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target create[0m
+[0.214s] [ 22%] Built target create
+[0.244s] [35m[1mConsolidate compiler generated dependencies of target bumpers[0m
+[0.244s] [35m[1mConsolidate compiler generated dependencies of target cliffs[0m
+[0.250s] [35m[1mConsolidate compiler generated dependencies of target drive_circle[0m
+[0.251s] [35m[1mConsolidate compiler generated dependencies of target leds[0m
+[0.256s] [35m[1mConsolidate compiler generated dependencies of target wheeldrop[0m
+[0.256s] [35m[1mConsolidate compiler generated dependencies of target battery_level[0m
+[0.257s] [35m[1mConsolidate compiler generated dependencies of target packets[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target play_song[0m
+[0.288s] [ 27%] Built target bumpers
+[0.294s] [ 33%] Built target cliffs
+[0.295s] [ 38%] Built target wheeldrop
+[0.303s] [ 50%] Built target play_song
+[0.303s] [ 50%] Built target battery_level
+[0.307s] [ 55%] Built target drive_circle
+[0.307s] [ 61%] Built target leds
+[0.314s] [ 66%] Built target packets
+[0.320s] [35m[1mConsolidate compiler generated dependencies of target test_data[0m
+[0.321s] [35m[1mConsolidate compiler generated dependencies of target test_packet[0m
+[0.324s] [35m[1mConsolidate compiler generated dependencies of target test_create[0m
+[0.329s] [35m[1mConsolidate compiler generated dependencies of target test_robot_model[0m
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target test_serial_query[0m
+[0.335s] [35m[1mConsolidate compiler generated dependencies of target test_serial_stream[0m
+[0.353s] [ 72%] Built target test_data
+[0.361s] [ 83%] Built target test_robot_model
+[0.361s] [ 83%] Built target test_packet
+[0.370s] [ 88%] Built target test_create
+[0.371s] [ 94%] Built target test_serial_stream
+[0.374s] [100%] Built target test_serial_query
+[0.387s] Invoked command in '/home/user/create_ws/build/libcreate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble /usr/bin/cmake --build /home/user/create_ws/build/libcreate -- -j8 -l8
+[0.389s] Invoking command in '/home/user/create_ws/build/libcreate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/libcreate
+[0.397s] -- Install configuration: ""
+[0.398s] -- Up-to-date: /home/user/create_ws/install/libcreate/lib/libcreate.so
+[0.399s] -- Up-to-date: /home/user/create_ws/install/libcreate/include
+[0.399s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create
+[0.399s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial.h
+[0.399s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_query.h
+[0.399s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/util.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/packet.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/data.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/types.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/serial_stream.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/include/create/create.h
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+[0.400s] -- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+[0.401s] -- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+[0.401s] -- Up-to-date: /home/user/create_ws/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+[0.401s] -- Up-to-date: /home/user/create_ws/install/libcreate/share/libcreate/package.xml
+[0.402s] Invoked command in '/home/user/create_ws/build/libcreate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/custom_explorer:/opt/ros/humble /usr/bin/cmake --install /home/user/create_ws/build/libcreate
