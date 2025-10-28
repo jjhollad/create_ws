@@ -1,0 +1,56 @@
+[0.062s] Invoking command in '/home/user/test_ws/build/create3_examples_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/create3_examples_msgs -- -j8 -l8
+[1.283s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.283s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.283s] [  6%] Built target ament_cmake_python_copy_create3_examples_msgs
+[1.283s] running egg_info
+[1.283s] creating create3_examples_msgs.egg-info
+[1.283s] writing create3_examples_msgs.egg-info/PKG-INFO
+[1.284s] writing dependency_links to create3_examples_msgs.egg-info/dependency_links.txt
+[1.284s] writing top-level names to create3_examples_msgs.egg-info/top_level.txt
+[1.284s] writing manifest file 'create3_examples_msgs.egg-info/SOURCES.txt'
+[1.284s] reading manifest file 'create3_examples_msgs.egg-info/SOURCES.txt'
+[1.284s] writing manifest file 'create3_examples_msgs.egg-info/SOURCES.txt'
+[1.284s] [  6%] Built target ament_cmake_python_build_create3_examples_msgs_egg
+[1.284s] [  6%] Built target create3_examples_msgs__cpp
+[1.284s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.284s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.285s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.285s] [ 19%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_generator_c.dir/rosidl_generator_c/create3_examples_msgs/action/detail/coverage__functions.c.o[0m
+[1.513s] [ 22%] [32m[1mLinking C shared library libcreate3_examples_msgs__rosidl_generator_c.so[0m
+[1.656s] [ 22%] Built target create3_examples_msgs__rosidl_generator_c
+[1.695s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.709s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.711s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.290s] [ 35%] [32mBuilding CXX object CMakeFiles/create3_examples_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create3_examples_msgs/action/coverage__type_support.cpp.o[0m
+[2.641s] [ 38%] [32mBuilding CXX object CMakeFiles/create3_examples_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create3_examples_msgs/action/detail/coverage__type_support.cpp.o[0m
+[2.732s] [ 41%] [32mBuilding CXX object CMakeFiles/create3_examples_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create3_examples_msgs/action/detail/dds_fastrtps/coverage__type_support.cpp.o[0m
+[2.796s] [ 45%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create3_examples_msgs/action/detail/coverage__type_support.c.o[0m
+[2.941s] [ 48%] [32m[1mLinking C shared library libcreate3_examples_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.997s] [ 48%] Built target create3_examples_msgs__rosidl_typesupport_introspection_c
+[3.474s] [ 51%] [32mBuilding CXX object CMakeFiles/create3_examples_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create3_examples_msgs/action/coverage__type_support.cpp.o[0m
+[3.660s] [ 54%] [32m[1mLinking CXX shared library libcreate3_examples_msgs__rosidl_typesupport_c.so[0m
+[3.799s] [ 58%] [32m[1mLinking CXX shared library libcreate3_examples_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.833s] [ 58%] Built target create3_examples_msgs__rosidl_typesupport_c
+[3.920s] [ 61%] [32mBuilding CXX object CMakeFiles/create3_examples_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create3_examples_msgs/action/detail/coverage__type_support_c.cpp.o[0m
+[4.149s] [ 64%] [32m[1mLinking CXX shared library libcreate3_examples_msgs__rosidl_typesupport_cpp.so[0m
+[4.158s] [ 64%] Built target create3_examples_msgs__rosidl_typesupport_fastrtps_cpp
+[4.158s] [ 67%] [32m[1mLinking CXX shared library libcreate3_examples_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.306s] [ 67%] Built target create3_examples_msgs__rosidl_typesupport_cpp
+[4.385s] [ 67%] Built target create3_examples_msgs__rosidl_typesupport_introspection_cpp
+[4.902s] [ 70%] [32m[1mLinking CXX shared library libcreate3_examples_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.075s] [ 70%] Built target create3_examples_msgs__rosidl_typesupport_fastrtps_c
+[5.120s] [ 70%] Built target create3_examples_msgs
+[5.182s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.245s] [ 74%] Built target create3_examples_msgs__py
+[7.272s] [ 77%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_generator_py.dir/rosidl_generator_py/create3_examples_msgs/action/_coverage_s.c.o[0m
+[7.461s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/create3_examples_msgs/libcreate3_examples_msgs__rosidl_generator_py.so[0m
+[7.511s] [ 80%] Built target create3_examples_msgs__rosidl_generator_py
+[7.537s] [ 83%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create3_examples_msgs/_create3_examples_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.539s] [ 90%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create3_examples_msgs/_create3_examples_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.539s] [ 90%] [32mBuilding C object CMakeFiles/create3_examples_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create3_examples_msgs/_create3_examples_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.682s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/create3_examples_msgs/create3_examples_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.683s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/create3_examples_msgs/create3_examples_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.686s] [100%] [32m[1mLinking C shared library rosidl_generator_py/create3_examples_msgs/create3_examples_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.731s] [100%] Built target create3_examples_msgs__rosidl_typesupport_c__pyext
+[7.732s] [100%] Built target create3_examples_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.734s] [100%] Built target create3_examples_msgs__rosidl_typesupport_introspection_c__pyext

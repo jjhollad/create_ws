@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/user/create3_examples_ws/install/create3_coverage/include/**",
+        "/home/user/create3_examples_ws/install/create3_examples_msgs/include/**",
+        "/home/user/create_ws/install/create_driver/include/**",
+        "/home/user/create_ws/install/create_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/user/test_ws/src/create3_examples/create3_coverage/include/**",
+        "/home/user/test_ws/src/create_robot/create_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

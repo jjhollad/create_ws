@@ -1,0 +1,103 @@
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_copy_create_msgs
+running egg_info
+creating create_msgs.egg-info
+writing create_msgs.egg-info/PKG-INFO
+writing dependency_links to create_msgs.egg-info/dependency_links.txt
+writing top-level names to create_msgs.egg-info/top_level.txt
+writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+reading manifest file 'create_msgs.egg-info/SOURCES.txt'
+writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_create_msgs_egg
+[  2%] Built target create_msgs__cpp
+[  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  7%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/charging_state__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/bumper__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/define_song__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/mode__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/play_song__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/motor_setpoint__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/cliff__functions.c.o[0m
+[ 16%] [32m[1mLinking C shared library libcreate_msgs__rosidl_generator_c.so[0m
+[ 16%] Built target create_msgs__rosidl_generator_c
+[ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/charging_state__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/define_song__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/bumper__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/define_song__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/charging_state__type_support.cpp.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/bumper__type_support.c.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/bumper__type_support.cpp.o[0m
+[ 34%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/charging_state__type_support.c.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/define_song__type_support.c.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/mode__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/define_song__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/mode__type_support.c.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/mode__type_support.cpp.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/play_song__type_support.c.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/play_song__type_support.cpp.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/motor_setpoint__type_support.c.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/mode__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/define_song__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/cliff__type_support.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/cliff__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/play_song__type_support.cpp.o[0m
+[ 55%] [32m[1mLinking C shared library libcreate_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 56%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_c.so[0m
+[ 56%] Built target create_msgs__rosidl_typesupport_introspection_c
+[ 58%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[ 58%] Built target create_msgs__rosidl_typesupport_c
+[ 59%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/cliff__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/charging_state__type_support_c.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/play_song__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/motor_setpoint__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/cliff__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/mode__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/play_song__type_support.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_cpp.so[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/motor_setpoint__type_support.cpp.o[0m
+[ 69%] Built target create_msgs__rosidl_typesupport_cpp
+[ 70%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/define_song__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/cliff__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/mode__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/play_song__type_support_c.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/motor_setpoint__type_support_c.cpp.o[0m
+[ 77%] Built target create_msgs__rosidl_typesupport_fastrtps_cpp
+[ 78%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/cliff__type_support_c.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 79%] Built target create_msgs__rosidl_typesupport_introspection_cpp
+[ 81%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 81%] Built target create_msgs__rosidl_typesupport_fastrtps_c
+[ 81%] Built target create_msgs
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target create_msgs__py
+[ 83%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_define_song_s.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_charging_state_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_bumper_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_motor_setpoint_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_play_song_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_mode_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_cliff_s.c.o[0m
+[ 92%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/libcreate_msgs__rosidl_generator_py.so[0m
+[ 92%] Built target create_msgs__rosidl_generator_py
+[ 94%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target create_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target create_msgs__rosidl_typesupport_c__pyext
+[100%] Built target create_msgs__rosidl_typesupport_fastrtps_c__pyext

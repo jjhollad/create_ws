@@ -1,0 +1,29 @@
+[0.486s] Invoking command in '/home/user/test_ws/build/create3_lidar_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/create3_lidar_slam -- -j8 -l8
+[0.884s] Invoked command in '/home/user/test_ws/build/create3_lidar_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/create3_lidar_slam -- -j8 -l8
+[0.886s] Invoking command in '/home/user/test_ws/build/create3_lidar_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/create3_lidar_slam
+[0.935s] -- Install configuration: ""
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/launch
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/launch/sensors_launch.py
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/launch/rviz_launch.py
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/launch/slam_toolbox_launch.py
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/config
+[0.935s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/config/rplidar_node.yaml
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/config/mapper_params_online_async.yaml
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/rviz
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/rviz/create3_lidar_slam.rviz
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/ament_index/resource_index/package_run_dependencies/create3_lidar_slam
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/ament_index/resource_index/parent_prefix_path/create3_lidar_slam
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/environment/ament_prefix_path.sh
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/environment/ament_prefix_path.dsv
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/environment/path.sh
+[0.936s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/environment/path.dsv
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/local_setup.bash
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/local_setup.sh
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/local_setup.zsh
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/local_setup.dsv
+[0.937s] -- Installing: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/package.dsv
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/ament_index/resource_index/packages/create3_lidar_slam
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/cmake/create3_lidar_slamConfig.cmake
+[0.937s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/cmake/create3_lidar_slamConfig-version.cmake
+[0.938s] -- Up-to-date: /home/user/test_ws/install/create3_lidar_slam/share/create3_lidar_slam/package.xml
+[0.990s] Invoked command in '/home/user/test_ws/build/create3_lidar_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/create3_lidar_slam

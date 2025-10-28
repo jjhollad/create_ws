@@ -1,0 +1,22 @@
+[0.537s] Invoking command in '/home/user/test_ws/build/create3_republisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_examples_msgs:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake /home/user/test_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/test_ws/install/create3_republisher
+[0.930s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.930s] -- Configuring incomplete, errors occurred!
+[0.930s] See also "/home/user/test_ws/build/create3_republisher/CMakeFiles/CMakeOutput.log".
+[0.930s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[0.930s]   By not providing "Findirobot_create_msgs.cmake" in CMAKE_MODULE_PATH this
+[0.930s]   project has asked CMake to find a package configuration file provided by
+[0.931s]   "irobot_create_msgs", but CMake did not find one.
+[0.931s] 
+[0.931s]   Could not find a package configuration file provided by
+[0.931s]   "irobot_create_msgs" with any of the following names:
+[0.931s] 
+[0.931s]     irobot_create_msgsConfig.cmake
+[0.931s]     irobot_create_msgs-config.cmake
+[0.931s] 
+[0.931s]   Add the installation prefix of "irobot_create_msgs" to CMAKE_PREFIX_PATH or
+[0.932s]   set "irobot_create_msgs_DIR" to a directory containing one of the above
+[0.932s]   files.  If "irobot_create_msgs" provides a separate development package or
+[0.932s]   SDK, be sure it has been installed.
+[0.932s] 
+[0.932s] [0m
+[0.950s] Invoked command in '/home/user/test_ws/build/create3_republisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_examples_msgs:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake /home/user/test_ws/src/create3_examples/create3_republisher -DCMAKE_INSTALL_PREFIX=/home/user/test_ws/install/create3_republisher
