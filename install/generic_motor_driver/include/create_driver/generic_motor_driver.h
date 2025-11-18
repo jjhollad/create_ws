@@ -116,6 +116,8 @@ private:
   std::vector<std::string> joint_names_;  // Joint names for joint_state (must match URDF)
   bool invert_left_encoder_;  // Invert left encoder direction
   bool invert_right_encoder_;  // Invert right encoder direction
+  bool invert_left_motor_;  // Invert left motor direction (for backwards motors)
+  bool invert_right_motor_;  // Invert right motor direction (for backwards motors)
   
   // Serial communication methods
   bool connectSerial();

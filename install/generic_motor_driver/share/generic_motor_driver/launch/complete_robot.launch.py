@@ -47,7 +47,7 @@ def generate_launch_description():
     
     motor_gear_ratio_arg = DeclareLaunchArgument(
         'motor_gear_ratio',
-        default_value='210.0',
+        default_value='90.0',
         description='Motor internal gear ratio'
     )
     
@@ -59,26 +59,38 @@ def generate_launch_description():
     
     loop_hz_arg = DeclareLaunchArgument(
         'loop_hz',
-        default_value='10.0',
-        description='Update loop frequency (Hz)'
+        default_value='20.0',
+        description='Update loop frequency (Hz) - higher = lower latency but more CPU'
     )
     
     max_motor_speed_arg = DeclareLaunchArgument(
         'max_motor_speed',
-        default_value='400.0',
+        default_value='1000.0',
         description='Maximum motor speed'
     )
     
     invert_left_encoder_arg = DeclareLaunchArgument(
         'invert_left_encoder',
-        default_value='true',
+        default_value='false',
         description='Invert left encoder direction (fix spinning in circles)'
     )
     
     invert_right_encoder_arg = DeclareLaunchArgument(
         'invert_right_encoder',
-        default_value='false',
+        default_value='true',
         description='Invert right encoder direction (fix spinning in circles)'
+    )
+    
+    invert_left_motor_arg = DeclareLaunchArgument(
+        'invert_left_motor',
+        default_value='true',
+        description='Invert left motor direction (fix backwards motors)'
+    )
+    
+    invert_right_motor_arg = DeclareLaunchArgument(
+        'invert_right_motor',
+        default_value='true',
+        description='Invert right motor direction (fix backwards motors)'
     )
     
     base_frame_arg = DeclareLaunchArgument(
@@ -146,6 +158,8 @@ def generate_launch_description():
             'max_motor_speed': LaunchConfiguration('max_motor_speed'),
             'invert_left_encoder': LaunchConfiguration('invert_left_encoder'),
             'invert_right_encoder': LaunchConfiguration('invert_right_encoder'),
+            'invert_left_motor': LaunchConfiguration('invert_left_motor'),
+            'invert_right_motor': LaunchConfiguration('invert_right_motor'),
             'base_frame': LaunchConfiguration('base_frame'),
             'odom_frame': LaunchConfiguration('odom_frame'),
             'use_sim_time': LaunchConfiguration('use_sim_time'),
@@ -212,6 +226,8 @@ def generate_launch_description():
         max_motor_speed_arg,
         invert_left_encoder_arg,
         invert_right_encoder_arg,
+        invert_left_motor_arg,
+        invert_right_motor_arg,
         base_frame_arg,
         odom_frame_arg,
         use_sim_time_arg,
