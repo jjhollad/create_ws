@@ -1,0 +1,58 @@
+[0.017s] Invoking command in '/home/user/test_ws/build/generic_motor_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/generic_motor_driver -- -j8 -l8
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target generic_motor_driver[0m
+[0.086s] [ 50%] Built target relay_controller
+[0.094s] [ 75%] [32mBuilding CXX object CMakeFiles/generic_motor_driver.dir/src/generic_motor_driver.cpp.o[0m
+[2.877s] In file included from [01m[K/home/user/test_ws/src/create_robot/create_driver/src/generic_motor_driver.cpp:29[m[K:
+[2.877s] [01m[K/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h:[m[K In constructor ‘[01m[KGenericMotorDriver::GenericMotorDriver()[m[K’:
+[2.877s] [01m[K/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h:107:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KGenericMotorDriver::is_running_slowly_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.877s]   107 |   bool [01;35m[Kis_running_slowly_[m[K;
+[2.878s]       |        [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.878s] [01m[K/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h:91:33:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ktf2_ros::TransformBroadcaster GenericMotorDriver::tf_broadcaster_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.878s]    91 |   tf2_ros::TransformBroadcaster [01;35m[Ktf_broadcaster_[m[K;
+[2.878s]       |                                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.878s] [01m[K/home/user/test_ws/src/create_robot/create_driver/src/generic_motor_driver.cpp:43:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.878s]    43 | [01;35m[KGenericMotorDriver[m[K::GenericMotorDriver()
+[2.878s]       | [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[10.793s] [100%] [32m[1mLinking CXX executable generic_motor_driver[0m
+[11.398s] [100%] Built target generic_motor_driver
+[11.412s] Invoked command in '/home/user/test_ws/build/generic_motor_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/generic_motor_driver -- -j8 -l8
+[11.424s] Invoking command in '/home/user/test_ws/build/generic_motor_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/generic_motor_driver
+[11.433s] -- Install configuration: ""
+[11.434s] -- Execute custom install script
+[11.434s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/lib/generic_motor_driver/generic_motor_driver
+[11.434s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/lib/generic_motor_driver/relay_controller
+[11.435s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/package_run_dependencies/generic_motor_driver
+[11.435s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/parent_prefix_path/generic_motor_driver
+[11.435s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/ament_prefix_path.sh
+[11.436s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/ament_prefix_path.dsv
+[11.436s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/path.sh
+[11.436s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/path.dsv
+[11.436s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.bash
+[11.437s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.sh
+[11.437s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.zsh
+[11.437s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.dsv
+[11.437s] -- Symlinking: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/package.dsv
+[11.449s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/packages/generic_motor_driver
+[11.449s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/cmake/generic_motor_driverConfig.cmake
+[11.449s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/cmake/generic_motor_driverConfig-version.cmake
+[11.449s] -- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/package.xml
+[11.449s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/create_driver.h
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/generic_motor_driver.h
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/relay_controller.h
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/generic_motor_driver.launch.py
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/urdf_test.launch.py
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/rectangular_robot.launch.py
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/complete_robot.launch.py
+[11.450s] -- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/teleop_joystick.launch.py
+[11.450s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/relay_controller.launch.py
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/create_2.urdf
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/generic_robot.urdf
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/rectangular_robot.urdf
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz/rectangular_robot.rviz
+[11.451s] -- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz/robot_view.rviz
+[11.453s] Invoked command in '/home/user/test_ws/build/generic_motor_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/generic_motor_driver

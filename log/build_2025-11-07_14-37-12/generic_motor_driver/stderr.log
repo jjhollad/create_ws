@@ -1,0 +1,11 @@
+In file included from /home/user/test_ws/src/create_robot/create_driver/src/generic_motor_driver.cpp:29:
+/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h: In constructor ‘GenericMotorDriver::GenericMotorDriver()’:
+/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h:108:8: warning: ‘GenericMotorDriver::is_running_slowly_’ will be initialized after [-Wreorder]
+  108 |   bool is_running_slowly_;
+      |        ^~~~~~~~~~~~~~~~~~
+/home/user/test_ws/src/create_robot/create_driver/include/create_driver/generic_motor_driver.h:92:33: warning:   ‘tf2_ros::TransformBroadcaster GenericMotorDriver::tf_broadcaster_’ [-Wreorder]
+   92 |   tf2_ros::TransformBroadcaster tf_broadcaster_;
+      |                                 ^~~~~~~~~~~~~~~
+/home/user/test_ws/src/create_robot/create_driver/src/generic_motor_driver.cpp:43:1: warning:   when initialized here [-Wreorder]
+   43 | GenericMotorDriver::GenericMotorDriver()
+      | ^~~~~~~~~~~~~~~~~~

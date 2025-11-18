@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/user/test_ws/build/generic_motor_driver/generic_motor_driver" "/home/user/test_ws/build/generic_motor_driver/relay_controller" "TARGETS" "generic_motor_driver" "relay_controller" "DESTINATION" "lib/generic_motor_driver")

@@ -45,6 +45,42 @@ def generate_launch_description():
         description='Wheel radius (meters)'
     )
     
+    motor_gear_ratio_arg = DeclareLaunchArgument(
+        'motor_gear_ratio',
+        default_value='210.0',
+        description='Motor internal gear ratio'
+    )
+    
+    belt_drive_ratio_arg = DeclareLaunchArgument(
+        'belt_drive_ratio',
+        default_value='6.4',
+        description='Belt drive ratio'
+    )
+    
+    loop_hz_arg = DeclareLaunchArgument(
+        'loop_hz',
+        default_value='10.0',
+        description='Update loop frequency (Hz)'
+    )
+    
+    max_motor_speed_arg = DeclareLaunchArgument(
+        'max_motor_speed',
+        default_value='400.0',
+        description='Maximum motor speed'
+    )
+    
+    invert_left_encoder_arg = DeclareLaunchArgument(
+        'invert_left_encoder',
+        default_value='true',
+        description='Invert left encoder direction (fix spinning in circles)'
+    )
+    
+    invert_right_encoder_arg = DeclareLaunchArgument(
+        'invert_right_encoder',
+        default_value='false',
+        description='Invert right encoder direction (fix spinning in circles)'
+    )
+    
     base_frame_arg = DeclareLaunchArgument(
         'base_frame',
         default_value='base_footprint',
@@ -81,16 +117,17 @@ def generate_launch_description():
         }]
     )
 
-    # Joint state publisher (for manual testing)
-    joint_state_publisher_node = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        output='screen',
-        parameters=[{
-            'use_sim_time': LaunchConfiguration('use_sim_time')
-        }]
-    )
+    # Note: joint_state_publisher is not needed since generic_motor_driver publishes joint states
+    # Joint state publisher (for manual testing - disabled to avoid conflicts)
+    # joint_state_publisher_node = Node(
+    #     package='joint_state_publisher',
+    #     executable='joint_state_publisher',
+    #     name='joint_state_publisher',
+    #     output='screen',
+    #     parameters=[{
+    #         'use_sim_time': LaunchConfiguration('use_sim_time')
+    #     }]
+    # )
 
     # Generic motor driver
     motor_driver_node = Node(
@@ -103,6 +140,12 @@ def generate_launch_description():
             'baud': LaunchConfiguration('baud'),
             'wheel_base': LaunchConfiguration('wheel_base'),
             'wheel_radius': LaunchConfiguration('wheel_radius'),
+            'motor_gear_ratio': LaunchConfiguration('motor_gear_ratio'),
+            'belt_drive_ratio': LaunchConfiguration('belt_drive_ratio'),
+            'loop_hz': LaunchConfiguration('loop_hz'),
+            'max_motor_speed': LaunchConfiguration('max_motor_speed'),
+            'invert_left_encoder': LaunchConfiguration('invert_left_encoder'),
+            'invert_right_encoder': LaunchConfiguration('invert_right_encoder'),
             'base_frame': LaunchConfiguration('base_frame'),
             'odom_frame': LaunchConfiguration('odom_frame'),
             'use_sim_time': LaunchConfiguration('use_sim_time'),
@@ -122,14 +165,10 @@ def generate_launch_description():
         }]
     )
 
-    # Static transform from base_link to base_footprint
-    static_transform_node = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='base_footprint_to_base_link',
-        arguments=['0', '0', '0', '0', '0', '0', 'base_footprint', 'base_link'],
-        output='screen'
-    )
+    # Note: Static transform from base_footprint to base_link is NOT needed
+    # because the URDF already defines this relationship via base_footprint_joint
+    # (base_link is 0.017m above base_footprint as defined in the URDF)
+    # robot_state_publisher will automatically publish this transform from the URDF
 
     # RViz
     rviz_node = Node(
@@ -167,6 +206,12 @@ def generate_launch_description():
         relay_status_rate_arg,
         wheel_base_arg,
         wheel_radius_arg,
+        motor_gear_ratio_arg,
+        belt_drive_ratio_arg,
+        loop_hz_arg,
+        max_motor_speed_arg,
+        invert_left_encoder_arg,
+        invert_right_encoder_arg,
         base_frame_arg,
         odom_frame_arg,
         use_sim_time_arg,
@@ -174,10 +219,10 @@ def generate_launch_description():
         
         # Nodes
         robot_state_publisher_node,
-        joint_state_publisher_node,
+        # joint_state_publisher_node,  # Disabled - motor driver publishes joint states
         motor_driver_node,
         relay_controller_node,
-        static_transform_node,
+        # static_transform_node,  # Not needed - URDF defines base_footprint to base_link
         rviz_node,
         
         # Optional navigation

@@ -52,9 +52,9 @@ static const double COVARIANCE[36] = {1e-5, 1e-5, 0.0,  0.0,  0.0,  1e-5,  // NO
                                       1e-5, 1e-5, 0.0,  0.0,  0.0,  1e-5};
 
 struct MotorData {
-  double total_encoder[4] = {0.0, 0.0, 0.0, 0.0};  // Total encoder counts for M1-M4
-  double realtime_encoder[4] = {0.0, 0.0, 0.0, 0.0};  // Real-time encoder counts (10ms)
-  double speed[4] = {0.0, 0.0, 0.0, 0.0};  // Speed for M1-M4
+  double total_encoder[2] = {0.0, 0.0};  // Total encoder counts for M1-M2 (left and right wheels) - from MAll
+  double realtime_encoder[2] = {0.0, 0.0};  // Real-time encoder counts (10ms) for M1-M2 - from MTEP
+  double speed[2] = {0.0, 0.0};  // Speed for M1-M2 - from MSPD (not used for odometry, kept for compatibility)
   rclcpp::Time timestamp;
 };
 
@@ -75,12 +75,14 @@ private:
   // Odometry calculation
   double wheel_base_;  // Distance between left and right wheels
   double wheel_radius_;  // Wheel radius
+
   double motor_gear_ratio_;  // Motor internal gear ratio (e.g., 50.0 for 1:50)
   double belt_drive_ratio_;  // Belt drive ratio (e.g., 2.0 for 1:2)
   double total_reduction_ratio_;  // Total reduction ratio
   double x_, y_, theta_;  // Robot pose
   double last_left_encoder_, last_right_encoder_;
   rclcpp::Time last_odom_time_;
+  bool encoders_initialized_;  // Track if encoders have been initialized
   
   // ROS2 interfaces
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_sub_;
@@ -98,6 +100,11 @@ private:
   rclcpp::Time last_cmd_vel_time_;
   std_msgs::msg::Float32 float32_msg_;
   
+  // Cached motor speeds (updated by cmd_vel, sent in update loop)
+  double cached_left_motor_speed_;
+  double cached_right_motor_speed_;
+  std::mutex cmd_vel_mutex_;
+  
   // ROS parameters
   std::string base_frame_;
   std::string odom_frame_;
@@ -105,6 +112,10 @@ private:
   double loop_hz_;
   bool publish_tf_;
   bool is_running_slowly_;
+  double max_motor_speed_;  // Maximum motor speed (-100 to 100)
+  std::vector<std::string> joint_names_;  // Joint names for joint_state (must match URDF)
+  bool invert_left_encoder_;  // Invert left encoder direction
+  bool invert_right_encoder_;  // Invert right encoder direction
   
   // Serial communication methods
   bool connectSerial();

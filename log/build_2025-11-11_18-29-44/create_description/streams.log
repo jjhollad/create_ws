@@ -1,0 +1,36 @@
+[0.032s] Invoking command in '/home/user/test_ws/build/create_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/create_description -- -j8 -l8
+[0.081s] Invoked command in '/home/user/test_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --build /home/user/test_ws/build/create_description -- -j8 -l8
+[0.097s] Invoking command in '/home/user/test_ws/build/create_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/create_description
+[0.110s] -- Install configuration: ""
+[0.110s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/launch
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/launch/create_1.launch
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/launch/roomba_400.launch
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/launch/create_2.launch
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/meshes
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/meshes/create_2.dae
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/meshes/create_1.dae
+[0.111s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/meshes/create_1.tga
+[0.112s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf
+[0.116s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_base_gazebo.urdf.xacro
+[0.116s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/roomba_base.urdf.xacro
+[0.116s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_base.urdf.xacro
+[0.116s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_2_gazebo.urdf.xacro
+[0.117s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_1.urdf.xacro
+[0.117s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_1_gazebo.urdf.xacro
+[0.122s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/urdf/create_2.urdf.xacro
+[0.122s] -- Up-to-date: /home/user/test_ws/install/create_description/share/ament_index/resource_index/package_run_dependencies/create_description
+[0.122s] -- Up-to-date: /home/user/test_ws/install/create_description/share/ament_index/resource_index/parent_prefix_path/create_description
+[0.122s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/environment/ament_prefix_path.sh
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/environment/ament_prefix_path.dsv
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/environment/path.sh
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/environment/path.dsv
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/local_setup.bash
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/local_setup.sh
+[0.123s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/local_setup.zsh
+[0.124s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/local_setup.dsv
+[0.124s] -- Installing: /home/user/test_ws/install/create_description/share/create_description/package.dsv
+[0.124s] -- Up-to-date: /home/user/test_ws/install/create_description/share/ament_index/resource_index/packages/create_description
+[0.124s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/cmake/create_descriptionConfig.cmake
+[0.124s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/cmake/create_descriptionConfig-version.cmake
+[0.124s] -- Up-to-date: /home/user/test_ws/install/create_description/share/create_description/package.xml
+[0.131s] Invoked command in '/home/user/test_ws/build/create_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/test_ws/install/create3_teleop:/home/user/test_ws/install/create3_examples_py:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble /usr/bin/cmake --install /home/user/test_ws/build/create_description

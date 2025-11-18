@@ -1,0 +1,306 @@
+[0.000000] (-) TimerEvent: {}
+[0.000239] (-) JobUnselected: {'identifier': 'create_bringup'}
+[0.000476] (-) JobUnselected: {'identifier': 'create_description'}
+[0.000523] (-) JobUnselected: {'identifier': 'create_msgs'}
+[0.000542] (-) JobUnselected: {'identifier': 'create_robot'}
+[0.000561] (generic_motor_driver) JobQueued: {'identifier': 'generic_motor_driver', 'dependencies': OrderedDict()}
+[0.000582] (generic_motor_driver) JobStarted: {'identifier': 'generic_motor_driver'}
+[0.024141] (generic_motor_driver) JobProgress: {'identifier': 'generic_motor_driver', 'progress': 'cmake'}
+[0.025906] (generic_motor_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/user/test_ws/src/create_robot/create_driver', '-DCMAKE_INSTALL_PREFIX=/home/user/test_ws/install/generic_motor_driver'], 'cwd': '/home/user/test_ws/build/generic_motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/user'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'user'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/user/test_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/user/.nvm/versions/node/v22.20.0/bin'), ('NVM_INC', '/home/user/.nvm/versions/node/v22.20.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-204de299-1.7.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1745'), ('SYSTEMD_EXEC_PID', '2052'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5288'), ('NVM_DIR', '/home/user/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:14640'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'dumb'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/user/.local/bin:/home/user/.local/bin:/home/user/.nvm/versions/node/v22.20.0/bin:/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/arduino-ide:/usr/bin/arduino-ide:/usr/bin/arduino-ide'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/2023,unix/mysweep1:/tmp/.ICE-unix/2023'), ('INVOCATION_ID', '8e512dc6f9824b8290cbe40b1c2d54da'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2LUMF3'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '7ec910a62d1e4da3b42d5c08f21e3ae8'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/test_ws/build/generic_motor_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/user/.config/Cursor/CachedData/9d178a4a5589981b62546448bb32920a8219a5d0'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/my_teleop_config/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('VSCODE_PID', '5288')]), 'shell': False}
+[0.060001] (generic_motor_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098992] (-) TimerEvent: {}
+[0.199168] (-) TimerEvent: {}
+[0.269676] (generic_motor_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.295324] (generic_motor_driver) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.9.0 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[0.299250] (-) TimerEvent: {}
+[0.343297] (generic_motor_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.347753] (generic_motor_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.358828] (generic_motor_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.375724] (generic_motor_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.396770] (generic_motor_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399355] (-) TimerEvent: {}
+[0.457516] (generic_motor_driver) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[0.499470] (-) TimerEvent: {}
+[0.531044] (generic_motor_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.534649] (generic_motor_driver) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.570228] (generic_motor_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.599591] (-) TimerEvent: {}
+[0.631893] (generic_motor_driver) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.650971] (generic_motor_driver) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.676453] (generic_motor_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.699705] (-) TimerEvent: {}
+[0.701267] (generic_motor_driver) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.708861] (generic_motor_driver) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.711685] (generic_motor_driver) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.799831] (-) TimerEvent: {}
+[0.875002] (generic_motor_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.899945] (-) TimerEvent: {}
+[0.985981] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.000102] (-) TimerEvent: {}
+[1.000714] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.001068] (generic_motor_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/user/test_ws/src/create_robot/create_driver/include\n'}
+[1.001204] (generic_motor_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.018440] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.018584] (generic_motor_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.021377] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.025894] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.028638] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.043222] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.043433] (generic_motor_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.046010] (generic_motor_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.048297] (generic_motor_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.075929] (generic_motor_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.087500] (generic_motor_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/user/test_ws/build/generic_motor_driver\n'}
+[1.098731] (generic_motor_driver) CommandEnded: {'returncode': 0}
+[1.099857] (generic_motor_driver) JobProgress: {'identifier': 'generic_motor_driver', 'progress': 'build'}
+[1.101120] (generic_motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/test_ws/build/generic_motor_driver', '--', '-j8', '-l8'], 'cwd': '/home/user/test_ws/build/generic_motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/user'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'user'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/user/test_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/user/.nvm/versions/node/v22.20.0/bin'), ('NVM_INC', '/home/user/.nvm/versions/node/v22.20.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-204de299-1.7.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1745'), ('SYSTEMD_EXEC_PID', '2052'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5288'), ('NVM_DIR', '/home/user/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:14640'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'dumb'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/user/.local/bin:/home/user/.local/bin:/home/user/.nvm/versions/node/v22.20.0/bin:/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/arduino-ide:/usr/bin/arduino-ide:/usr/bin/arduino-ide'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/2023,unix/mysweep1:/tmp/.ICE-unix/2023'), ('INVOCATION_ID', '8e512dc6f9824b8290cbe40b1c2d54da'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2LUMF3'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '7ec910a62d1e4da3b42d5c08f21e3ae8'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/test_ws/build/generic_motor_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/user/.config/Cursor/CachedData/9d178a4a5589981b62546448bb32920a8219a5d0'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/my_teleop_config/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('VSCODE_PID', '5288')]), 'shell': False}
+[1.103868] (-) TimerEvent: {}
+[1.167652] (generic_motor_driver) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target generic_motor_driver\n'}
+[1.168043] (generic_motor_driver) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target relay_controller\n'}
+[1.198374] (generic_motor_driver) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/relay_controller.dir/src/relay_controller.cpp.o\n'}
+[1.203974] (-) TimerEvent: {}
+[1.204995] (generic_motor_driver) StdoutLine: {'line': b'[ 75%] Built target generic_motor_driver\n'}
+[1.304089] (-) TimerEvent: {}
+[1.404283] (-) TimerEvent: {}
+[1.504483] (-) TimerEvent: {}
+[1.604675] (-) TimerEvent: {}
+[1.704903] (-) TimerEvent: {}
+[1.805156] (-) TimerEvent: {}
+[1.905377] (-) TimerEvent: {}
+[2.005649] (-) TimerEvent: {}
+[2.105895] (-) TimerEvent: {}
+[2.206144] (-) TimerEvent: {}
+[2.306373] (-) TimerEvent: {}
+[2.406595] (-) TimerEvent: {}
+[2.506834] (-) TimerEvent: {}
+[2.607051] (-) TimerEvent: {}
+[2.707313] (-) TimerEvent: {}
+[2.807572] (-) TimerEvent: {}
+[2.907831] (-) TimerEvent: {}
+[3.008068] (-) TimerEvent: {}
+[3.108335] (-) TimerEvent: {}
+[3.208539] (-) TimerEvent: {}
+[3.308758] (-) TimerEvent: {}
+[3.408985] (-) TimerEvent: {}
+[3.509227] (-) TimerEvent: {}
+[3.609445] (-) TimerEvent: {}
+[3.709690] (-) TimerEvent: {}
+[3.809915] (-) TimerEvent: {}
+[3.910170] (-) TimerEvent: {}
+[4.010377] (-) TimerEvent: {}
+[4.110628] (-) TimerEvent: {}
+[4.210800] (-) TimerEvent: {}
+[4.311006] (-) TimerEvent: {}
+[4.411184] (-) TimerEvent: {}
+[4.511336] (-) TimerEvent: {}
+[4.611532] (-) TimerEvent: {}
+[4.711700] (-) TimerEvent: {}
+[4.811874] (-) TimerEvent: {}
+[4.912115] (-) TimerEvent: {}
+[5.012313] (-) TimerEvent: {}
+[5.112503] (-) TimerEvent: {}
+[5.212708] (-) TimerEvent: {}
+[5.312954] (-) TimerEvent: {}
+[5.413166] (-) TimerEvent: {}
+[5.513375] (-) TimerEvent: {}
+[5.613582] (-) TimerEvent: {}
+[5.713764] (-) TimerEvent: {}
+[5.814022] (-) TimerEvent: {}
+[5.914216] (-) TimerEvent: {}
+[6.014402] (-) TimerEvent: {}
+[6.114610] (-) TimerEvent: {}
+[6.214813] (-) TimerEvent: {}
+[6.315107] (-) TimerEvent: {}
+[6.418062] (-) TimerEvent: {}
+[6.518428] (-) TimerEvent: {}
+[6.618678] (-) TimerEvent: {}
+[6.718938] (-) TimerEvent: {}
+[6.819163] (-) TimerEvent: {}
+[6.919356] (-) TimerEvent: {}
+[7.019576] (-) TimerEvent: {}
+[7.119770] (-) TimerEvent: {}
+[7.219999] (-) TimerEvent: {}
+[7.320251] (-) TimerEvent: {}
+[7.420472] (-) TimerEvent: {}
+[7.520726] (-) TimerEvent: {}
+[7.620960] (-) TimerEvent: {}
+[7.721247] (-) TimerEvent: {}
+[7.821508] (-) TimerEvent: {}
+[7.921751] (-) TimerEvent: {}
+[8.021994] (-) TimerEvent: {}
+[8.122222] (-) TimerEvent: {}
+[8.222442] (-) TimerEvent: {}
+[8.322654] (-) TimerEvent: {}
+[8.422867] (-) TimerEvent: {}
+[8.523089] (-) TimerEvent: {}
+[8.623241] (-) TimerEvent: {}
+[8.723403] (-) TimerEvent: {}
+[8.823620] (-) TimerEvent: {}
+[8.923823] (-) TimerEvent: {}
+[9.023985] (-) TimerEvent: {}
+[9.124159] (-) TimerEvent: {}
+[9.224314] (-) TimerEvent: {}
+[9.324529] (-) TimerEvent: {}
+[9.424719] (-) TimerEvent: {}
+[9.524934] (-) TimerEvent: {}
+[9.625189] (-) TimerEvent: {}
+[9.725385] (-) TimerEvent: {}
+[9.825579] (-) TimerEvent: {}
+[9.925812] (-) TimerEvent: {}
+[10.026017] (-) TimerEvent: {}
+[10.126206] (-) TimerEvent: {}
+[10.226361] (-) TimerEvent: {}
+[10.326629] (-) TimerEvent: {}
+[10.426814] (-) TimerEvent: {}
+[10.527011] (-) TimerEvent: {}
+[10.627195] (-) TimerEvent: {}
+[10.727381] (-) TimerEvent: {}
+[10.827583] (-) TimerEvent: {}
+[10.927768] (-) TimerEvent: {}
+[11.027976] (-) TimerEvent: {}
+[11.128225] (-) TimerEvent: {}
+[11.228451] (-) TimerEvent: {}
+[11.328686] (-) TimerEvent: {}
+[11.428946] (-) TimerEvent: {}
+[11.529169] (-) TimerEvent: {}
+[11.629389] (-) TimerEvent: {}
+[11.729618] (-) TimerEvent: {}
+[11.829858] (-) TimerEvent: {}
+[11.930156] (-) TimerEvent: {}
+[12.030482] (-) TimerEvent: {}
+[12.130693] (-) TimerEvent: {}
+[12.230888] (-) TimerEvent: {}
+[12.331124] (-) TimerEvent: {}
+[12.431357] (-) TimerEvent: {}
+[12.531553] (-) TimerEvent: {}
+[12.631746] (-) TimerEvent: {}
+[12.731971] (-) TimerEvent: {}
+[12.832192] (-) TimerEvent: {}
+[12.932399] (-) TimerEvent: {}
+[13.032605] (-) TimerEvent: {}
+[13.132826] (-) TimerEvent: {}
+[13.233027] (-) TimerEvent: {}
+[13.333294] (-) TimerEvent: {}
+[13.433517] (-) TimerEvent: {}
+[13.533701] (-) TimerEvent: {}
+[13.633897] (-) TimerEvent: {}
+[13.734166] (-) TimerEvent: {}
+[13.834362] (-) TimerEvent: {}
+[13.934580] (-) TimerEvent: {}
+[14.034780] (-) TimerEvent: {}
+[14.135027] (-) TimerEvent: {}
+[14.235332] (-) TimerEvent: {}
+[14.335546] (-) TimerEvent: {}
+[14.435767] (-) TimerEvent: {}
+[14.535986] (-) TimerEvent: {}
+[14.636180] (-) TimerEvent: {}
+[14.736364] (-) TimerEvent: {}
+[14.836541] (-) TimerEvent: {}
+[14.936734] (-) TimerEvent: {}
+[15.036916] (-) TimerEvent: {}
+[15.137152] (-) TimerEvent: {}
+[15.237375] (-) TimerEvent: {}
+[15.337567] (-) TimerEvent: {}
+[15.437742] (-) TimerEvent: {}
+[15.537941] (-) TimerEvent: {}
+[15.638165] (-) TimerEvent: {}
+[15.738366] (-) TimerEvent: {}
+[15.838544] (-) TimerEvent: {}
+[15.938765] (-) TimerEvent: {}
+[16.038962] (-) TimerEvent: {}
+[16.139198] (-) TimerEvent: {}
+[16.239396] (-) TimerEvent: {}
+[16.339614] (-) TimerEvent: {}
+[16.439868] (-) TimerEvent: {}
+[16.540067] (-) TimerEvent: {}
+[16.640322] (-) TimerEvent: {}
+[16.740564] (-) TimerEvent: {}
+[16.840804] (-) TimerEvent: {}
+[16.940986] (-) TimerEvent: {}
+[17.041200] (-) TimerEvent: {}
+[17.141399] (-) TimerEvent: {}
+[17.241688] (-) TimerEvent: {}
+[17.341933] (-) TimerEvent: {}
+[17.442159] (-) TimerEvent: {}
+[17.542386] (-) TimerEvent: {}
+[17.642610] (-) TimerEvent: {}
+[17.742811] (-) TimerEvent: {}
+[17.843009] (-) TimerEvent: {}
+[17.943280] (-) TimerEvent: {}
+[18.043504] (-) TimerEvent: {}
+[18.143724] (-) TimerEvent: {}
+[18.243931] (-) TimerEvent: {}
+[18.344136] (-) TimerEvent: {}
+[18.444326] (-) TimerEvent: {}
+[18.544565] (-) TimerEvent: {}
+[18.644786] (-) TimerEvent: {}
+[18.744990] (-) TimerEvent: {}
+[18.845193] (-) TimerEvent: {}
+[18.945411] (-) TimerEvent: {}
+[19.045620] (-) TimerEvent: {}
+[19.145829] (-) TimerEvent: {}
+[19.246020] (-) TimerEvent: {}
+[19.346221] (-) TimerEvent: {}
+[19.446413] (-) TimerEvent: {}
+[19.546635] (-) TimerEvent: {}
+[19.646853] (-) TimerEvent: {}
+[19.747030] (-) TimerEvent: {}
+[19.847212] (-) TimerEvent: {}
+[19.942733] (generic_motor_driver) StdoutLine: {'line': b'[100%] Linking CXX executable relay_controller\n'}
+[19.947321] (-) TimerEvent: {}
+[20.047531] (-) TimerEvent: {}
+[20.147776] (-) TimerEvent: {}
+[20.248003] (-) TimerEvent: {}
+[20.348272] (-) TimerEvent: {}
+[20.448470] (-) TimerEvent: {}
+[20.548659] (-) TimerEvent: {}
+[20.648866] (-) TimerEvent: {}
+[20.749122] (-) TimerEvent: {}
+[20.849358] (-) TimerEvent: {}
+[20.949550] (-) TimerEvent: {}
+[20.981038] (generic_motor_driver) StdoutLine: {'line': b'[100%] Built target relay_controller\n'}
+[20.996300] (generic_motor_driver) CommandEnded: {'returncode': 0}
+[20.997393] (generic_motor_driver) JobProgress: {'identifier': 'generic_motor_driver', 'progress': 'install'}
+[21.009384] (generic_motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/test_ws/build/generic_motor_driver'], 'cwd': '/home/user/test_ws/build/generic_motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/user'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'user'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/create3_examples_ws/install/create3_coverage/lib:/home/user/create3_examples_ws/install/create3_examples_msgs/lib:/home/user/create_ws/install/libcreate/lib:/home/user/create_ws/install/create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/user'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/user/test_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/user/.nvm/versions/node/v22.20.0/bin'), ('NVM_INC', '/home/user/.nvm/versions/node/v22.20.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-204de299-1.7.-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/cursor.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1745'), ('SYSTEMD_EXEC_PID', '2052'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5288'), ('NVM_DIR', '/home/user/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', ''), ('COLCON_PREFIX_PATH', '/home/user/create3_examples_ws/install:/home/user/create_ws/install:/home/user/sweepbot_ws/install:/home/user/launch_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('FORCE_COLOR', '0'), ('JOURNAL_STREAM', '8:14640'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/user/create_ws/install/libcreate/lib/x86_64-linux-gnu/pkgconfig:/home/user/create_ws/install/libcreate/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'dumb'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/user/.local/bin:/home/user/.local/bin:/home/user/.nvm/versions/node/v22.20.0/bin:/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/bin/arduino-ide:/usr/bin/arduino-ide:/usr/bin/arduino-ide'), ('SESSION_MANAGER', 'local/mysweep1:@/tmp/.ICE-unix/2023,unix/mysweep1:/tmp/.ICE-unix/2023'), ('INVOCATION_ID', '8e512dc6f9824b8290cbe40b1c2d54da'), ('XDG_MENU_PREFIX', 'gnome-'), ('VSCODE_PROCESS_TITLE', 'extension-host  [1-1]'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2LUMF3'), ('LS_COLORS', ''), ('CURSOR_TRACE_ID', '7ec910a62d1e4da3b42d5c08f21e3ae8'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/test_ws/build/generic_motor_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/user/.config/Cursor/CachedData/9d178a4a5589981b62546448bb32920a8219a5d0'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/launch_ws/install/py_launch_example/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_teleop/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_py/lib/python3.10/site-packages:/home/user/create3_examples_ws/install/create3_examples_msgs/local/lib/python3.10/dist-packages:/home/user/create_ws/install/create_msgs/local/lib/python3.10/dist-packages:/home/user/sweepbot_ws/install/sweepbot/lib/python3.10/site-packages:/home/user/sweepbot_ws/install/my_teleop_config/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/user/create3_examples_ws/install/create3_republisher:/home/user/create3_examples_ws/install/create3_lidar_slam:/home/user/create3_examples_ws/install/create3_coverage:/home/user/create3_examples_ws/install/create3_examples_msgs:/home/user/create_ws/install/create_robot:/home/user/create_ws/install/create_bringup:/home/user/create_ws/install/create_driver:/home/user/create_ws/install/libcreate:/home/user/create_ws/install/create_msgs:/home/user/create_ws/install/create_description:/home/user/launch_ws/install/py_launch_example:/home/user/create3_examples_ws/install/create3_teleop:/home/user/create3_examples_ws/install/create3_examples_py:/home/user/sweepbot_ws/install/sweepbot:/home/user/sweepbot_ws/install/my_teleop_config:/opt/ros/humble'), ('VSCODE_PID', '5288')]), 'shell': False}
+[21.020453] (generic_motor_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.021020] (generic_motor_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.021597] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/lib/generic_motor_driver/generic_motor_driver\n'}
+[21.021923] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/lib/generic_motor_driver/relay_controller\n'}
+[21.022259] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/package_run_dependencies/generic_motor_driver\n'}
+[21.022488] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/parent_prefix_path/generic_motor_driver\n'}
+[21.022700] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/ament_prefix_path.sh\n'}
+[21.022962] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/ament_prefix_path.dsv\n'}
+[21.023264] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/path.sh\n'}
+[21.023660] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/environment/path.dsv\n'}
+[21.023923] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.bash\n'}
+[21.024188] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.sh\n'}
+[21.024447] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.zsh\n'}
+[21.024690] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/local_setup.dsv\n'}
+[21.024914] (generic_motor_driver) StdoutLine: {'line': b'-- Symlinking: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/package.dsv\n'}
+[21.035755] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/ament_index/resource_index/packages/generic_motor_driver\n'}
+[21.036462] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/cmake/generic_motor_driverConfig.cmake\n'}
+[21.036718] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/cmake/generic_motor_driverConfig-version.cmake\n'}
+[21.036937] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/package.xml\n'}
+[21.037154] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include\n'}
+[21.037643] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver\n'}
+[21.037902] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/create_driver.h\n'}
+[21.038115] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/generic_motor_driver.h\n'}
+[21.038243] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/include/create_driver/relay_controller.h\n'}
+[21.038364] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch\n'}
+[21.038497] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/generic_motor_driver.launch.py\n'}
+[21.038610] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/urdf_test.launch.py\n'}
+[21.038726] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/rectangular_robot.launch.py\n'}
+[21.038837] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/complete_robot.launch.py\n'}
+[21.038948] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/teleop_joystick.launch.py\n'}
+[21.039059] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/launch/relay_controller.launch.py\n'}
+[21.039202] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf\n'}
+[21.039316] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/create_2.urdf\n'}
+[21.039428] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/generic_robot.urdf\n'}
+[21.039543] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/urdf/rectangular_robot.urdf\n'}
+[21.039661] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz\n'}
+[21.039782] (generic_motor_driver) StdoutLine: {'line': b'-- Installing: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz/rectangular_robot.rviz\n'}
+[21.039890] (generic_motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/user/test_ws/install/generic_motor_driver/share/generic_motor_driver/rviz/robot_view.rviz\n'}
+[21.040578] (generic_motor_driver) CommandEnded: {'returncode': 0}
+[21.049655] (-) TimerEvent: {}
+[21.064230] (generic_motor_driver) JobEnded: {'identifier': 'generic_motor_driver', 'rc': 0}
+[21.064902] (-) EventReactorShutdown: {}
