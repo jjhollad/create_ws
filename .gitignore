@@ -1,0 +1,7 @@
+build/
+install/
+log/
+
+# Keep recorded troubleshooting data versionable when intentionally added.
+!runs/
+!runs/**
